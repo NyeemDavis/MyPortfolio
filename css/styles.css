@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact-textarea {
+    resize: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Or any width that suits your design */
+    gap: 10px; /* Or any gap that suits your design */
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px; /* Or any margin that suits your design */
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%; /* This will make your input fields take up the full width of the form */
+    padding: 5px; /* Or any padding that suits your design */
+  }
+  
+  .contact-form button {
+    padding: 10px; /* Or any padding that suits your design */
+    background-color: #4CAF50; /* Or any background color that suits your design */
+    color: white; /* Or any color that suits your design */
+    border: none; /* Or any border style that suits your design */
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049; /* Or any hover color that suits your design */
+  }
