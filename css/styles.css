@@ -1,54 +1,104 @@
+/* Reset Styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Default Font */
 }
 
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Layout Styles */
 main {
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 30px;
 }
 
 section {
-    border: solid 1px black;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header h2 {
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #007bff;
 }
 
 /* Icons */
+.icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
 
-
-
+.icons li {
+  margin-right: 10px;
+}
 
 /* Contact Form */
-
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px; /* Or any width that suits your design */
-    gap: 10px; /* Or any gap that suits your design */
-  }
-  
-  .contact-form label {
-    margin-bottom: 5px; /* Or any margin that suits your design */
-  }
-  
-  .contact-form input, .contact-form textarea {
-    width: 100%; /* This will make your input fields take up the full width of the form */
-    padding: 5px; /* Or any padding that suits your design */
-  }
-  
-  .contact-form button {
-    padding: 10px; /* Or any padding that suits your design */
-    background-color: #4CAF50; /* Or any background color that suits your design */
-    color: white; /* Or any color that suits your design */
-    border: none; /* Or any border style that suits your design */
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #45a049; /* Or any hover color that suits your design */
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  .contact-textarea {
-    resize: none;
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact-textarea {
+  resize: none;
 }
