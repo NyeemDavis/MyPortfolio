@@ -1,3 +1,10 @@
+/* Global variables */
+
+:root {
+  --brown: #3a1f04;
+  --my-background-color: black
+}
+
 /* Reset Styles */
 html {
   scroll-behavior: smooth;
@@ -14,7 +21,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
-  background-color: #060606;
+  background-color: var(--my-background-color);
 }
 
 /* Main Layout Styles */
@@ -26,60 +33,13 @@ main {
   
 }
 
-section {
-  margin-bottom: 20px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  background-color: black;
-  height: 80vh;
-}
-
-#about-me-section {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.about-me-description {
-  width: 500px;
-}
-
-#skills-section {
-  background-color: #864D29;
-  height: 40vh;
-}
-
-#projects-section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.project {
-  width: 450px;
-  margin-bottom: 2%;
-  transition: background-color 0.5s ease;
-  transition: transform 0.3 ease ;
-  border-radius: 5px;
-}
-.project:hover {
-  background-color: #864D29;
-  transform: scale(110%);
-}
-
 /* Header Styles */
 header {
   display: flex;
   color: white;
   justify-content: space-between;
   position: fixed;
-  background-color: black;
+  background-color: var(--my-background-color);
   width: 100%;
   height: 70px;
   padding: 20px 0;
@@ -87,6 +47,9 @@ header {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
+a {
+  text-decoration: none;
+}
 
 nav ul {
   list-style: none;
@@ -105,10 +68,85 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #864D29;
+  color: var(--brown)
 }
 
+
+/* Sections */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: var(--my-background-color);
+  height: 80vh;
+}
+
+#about-me-section {
+  background-color: var(--my-background-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.about-me-description {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hire-me-anchor {
+  background-color: var(--brown);
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 25%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#hire-me-anchor::after {
+  color:var(--brown);
+}
+
+#skills-section {
+  background-color: var(--brown);
+  height: 40vh;
+}
+
+#projects-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project {
+  width: 450px;
+  margin-bottom: 2%;
+  transition: background-color 0.5s ease;
+  transition: transform all 0.3 ease ;
+  border-radius: 5px;
+}
+.project:hover {
+  background-color: var(--brown);
+  transform: scale(110%);
+}
+
+
+
+
 /* Icons */
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+
 .icons {
   display: flex;
   justify-content: space-between;
@@ -118,6 +156,10 @@ nav ul li a:hover {
 .icons li {
   margin-right: 10px;
 }
+
+
+
+
 
 /* Contact Form */
 .contact-form {
@@ -139,7 +181,7 @@ nav ul li a:hover {
 
 .contact-form button {
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: var(--brown);
   color: white;
   border: none;
   cursor: pointer;
@@ -154,3 +196,4 @@ nav ul li a:hover {
 .contact-textarea {
   resize: none;
 }
+
