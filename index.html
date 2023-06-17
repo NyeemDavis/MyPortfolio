@@ -16,10 +16,11 @@
         <h2>Nyeem Davis</h2>
         <nav>
             <ul>
-                <li><a href="#about-me-section">About me</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#hire-me-section">Hire Me</a></li>
-                <li><a href="#my-services-section">Services</a></li>
+                <li><a href="#about-me-section header-element">About Me</a></li>
+                <li><a href="#projects-section header-element">Projects</a></li>
+                <li><a href="#hire-me-section header-element">Contact</a></li>
+                <li><a href="#my-services-section header-element">Services</a></li>
+                <li><i class="fa-solid fa-circle-half-stroke header-element" style="color: #864D29;"></i></li>
             </ul>
         </nav>
     </header>
@@ -27,10 +28,15 @@
     <main>
         <section id="about-me-section">
             <div class="about-me-description">
-                <h1>HI IM NYEEM, YOUR NEXT FULLSTACK-DEV</h1>
+                <h1>HI IM NY'EEM, YOUR NEXT FULLSTACK-DEV</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus placeat fuga nemo doloremque repudiandae. 
                 Repellat illo molestias modi iste eligendi exercitationem quibusdam blanditiis commodi? 
                 Est harum ut illum numquam natus.</p>
+                <ul class="social-icons">
+                    <li><a href="https://github.com/NyeemDavis" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #864D29;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nyeemdavis/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #864D29;"></i></a></li>
+                </ul>
+                <a id="hire-me-anchor" href="#hire-me-section">HIRE ME</a>
             </div>
             <img src="" alt="cool-image"><img>
         </section>
@@ -40,16 +46,16 @@
             <div class="skills-div">
                 <h3>Front-End</h3>
                 <ul class="icons">
-                    <li><i class="fa-brands fa-react fa-2xl icon" style="color: #61DBFB;"></i>React</li> 
-                    <li><i class="fa-brands fa-js fa-2xl icon" style="color: #F0DB4F;"></i>Javascript</li>
-                    <li><i class="fa-brands fa-html5 fa-2xl icon" style="color: #ff9500;"></i>HTML5</li>
-                    <li><i class="fa-brands fa-css3-alt fa-2xl icon" style="color: #005eff;"></i>CSS</li>
+                    <li><i class="fa-brands fa-react fa-2xl " style="color: #61DBFB;"></i>React</li> 
+                    <li><i class="fa-brands fa-js fa-2xl " style="color: #F0DB4F;"></i>Javascript</li>
+                    <li><i class="fa-brands fa-html5 fa-2xl " style="color: #ff9500;"></i>HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt fa-2xl " style="color: #005eff;"></i>CSS</li>
                 </ul>
             </div>
             <div class="skills-div">
                 <h3>Tools</h3>
                 <ul class="icons">
-                    <li><i class="fa-brands fa-git-alt fa-2xl icon" style="color: #ff7300;"></i>Git Bash</li>
+                    <li><i class="fa-brands fa-git-alt fa-2xl " style="color: #ff7300;"></i>Git Bash</li>
                 </ul>
                 
             </div>
@@ -58,12 +64,10 @@
                 <h3>Back-end</h3>
             
                 <ul class="icons">
-                    <li><i class="fa-brands fa-node-js fa-2xl icon" style="color: #388E3C;"></i>Node.js</li>
-                    <li><i class="icon">Express</i></li>
-                    <li><i class="icon">MongoDB</i></li>
+                    <li><i class="fa-brands fa-node-js fa-2xl " style="color: #388E3C;"></i>Node.js</li>
+                    <li><img src="images/icons/icons8-express.svg" alt="Express-icon"></li>
+                    <li><img src="images/icons/mongodb-ar21.svg" alt="Mongodb-icon"></li>
                 </ul>
-                
-                
             </div>
         </section>
 
@@ -75,11 +79,6 @@
                 <p class="project-description">Real-time weather information and multi-day forecasts for locations worldwide. 
                 Search by city or use the current location. Built with HTML, CSS, JavaScript, and React, 
                 showcasing front-end skills and weather API integration</p>
-                <h3>Technologies used</h3>
-                <ul class="project-technologies">
-                    <li><i class="fa-brands fa-react fa-2xl icon" style="color: #61DBFB;"></i>React</li> 
-                    <li><i class="fa-brands fa-js fa-2xl icon" style="color: #F0DB4F;"></i>Javascript</li>
-                </ul>
                 <a href="https://www.example.com">View Project</a>
                 <a href="https://github.com/NyeemDavis/WeatherForecastApp">View Code</a>
                 <img  class="project-image" src="" alt="OrakleSky">
@@ -90,11 +89,6 @@
                 <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
                 Quod magni saepe odit rem deserunt aspernatur, ipsam, repellendus voluptatibus exercitationem minima provident 
                 sed? Repellendus, a?</p>
-                <h3>Technologies used</h3>
-                <ul class="project-technologies">
-                    <li><i class="fa-brands fa-react fa-2xl icon" style="color: #61DBFB;"></i>React</li> 
-                    <li><i class="fa-brands fa-js fa-2xl icon" style="color: #F0DB4F;"></i>Javascript</li>
-                </ul>
                 <a href="https://www.example.com">View Project</a>
                 <a href="">View Code</a>
                 <img  class="project-image" src="" alt="E-commerence site">
@@ -105,11 +99,6 @@
                 <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
                 Quod magni saepe odit rem deserunt aspernatur, ipsam, repellendus voluptatibus exercitationem minima provident 
                 sed? Repellendus, a?</p>
-                <h3>Technologies used</h3>
-                <ul class="project-technologies">
-                    <li><i class="fa-brands fa-react fa-2xl icon" style="color: #61DBFB;"></i>React</li> 
-                    <li><i class="fa-brands fa-js fa-2xl icon" style="color: #F0DB4F;"></i>Javascript</li>
-                </ul>
                 <a href="https://www.example.com">View Project</a>
                 <a href="">View Code</a>
                 <img  class="project-image" src="" alt="bruh">
@@ -120,11 +109,6 @@
                 <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
                 Quod magni saepe odit rem deserunt aspernatur, ipsam, repellendus voluptatibus exercitationem minima provident 
                 sed? Repellendus, a?</p>
-                <h3>Technologies used</h3>
-                <ul class="project-technologies">
-                    <li><i class="fa-brands fa-react fa-2xl icon" style="color: #61DBFB;"></i>React</li> 
-                    <li><i class="fa-brands fa-js fa-2xl icon" style="color: #F0DB4F;"></i>Javascript</li>
-                </ul>
                 <a href="https://www.example.com">View Project</a>
                 <a href="">View Code</a>
                 <img class="project-image" src="" alt="bruh">
