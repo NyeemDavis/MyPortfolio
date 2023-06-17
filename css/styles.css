@@ -1,54 +1,199 @@
+/* Global variables */
+
+:root {
+  --brown: #3a1f04;
+  --my-background-color: black
+}
+
+/* Reset Styles */
+html {
+  scroll-behavior: smooth;
+}
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Arial, sans-serif;  */
+  font-family: 'Roboto Mono', monospace;
 }
 
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  background-color: var(--my-background-color);
+}
+
+/* Main Layout Styles */
 main {
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
+  color: white;
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 30px;
+  
 }
 
-section {
-    border: solid 1px black;
+/* Header Styles */
+header {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  position: fixed;
+  background-color: var(--my-background-color);
+  width: 100%;
+  height: 70px;
+  padding: 20px 0;
+  margin: 0px 10px 0px 10px;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease; 
+}
+
+nav ul li a:hover {
+  color: var(--brown)
+}
+
+
+/* Sections */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: var(--my-background-color);
+  height: 80vh;
+}
+
+#about-me-section {
+  background-color: var(--my-background-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.about-me-description {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hire-me-anchor {
+  background-color: var(--brown);
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 25%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#hire-me-anchor::after {
+  color:var(--brown);
+}
+
+#skills-section {
+  background-color: var(--brown);
+  height: 40vh;
+}
+
+#projects-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project {
+  width: 450px;
+  margin-bottom: 2%;
+  transition: background-color 0.5s ease;
+  transition: transform all 0.3 ease ;
+  border-radius: 5px;
+}
+.project:hover {
+  background-color: var(--brown);
+  transform: scale(110%);
+}
+
+
+
 
 /* Icons */
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.icons li {
+  margin-right: 10px;
+}
+
 
 
 
 
 /* Contact Form */
-
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px; /* Or any width that suits your design */
-    gap: 10px; /* Or any gap that suits your design */
-  }
-  
-  .contact-form label {
-    margin-bottom: 5px; /* Or any margin that suits your design */
-  }
-  
-  .contact-form input, .contact-form textarea {
-    width: 100%; /* This will make your input fields take up the full width of the form */
-    padding: 5px; /* Or any padding that suits your design */
-  }
-  
-  .contact-form button {
-    padding: 10px; /* Or any padding that suits your design */
-    background-color: #4CAF50; /* Or any background color that suits your design */
-    color: white; /* Or any color that suits your design */
-    border: none; /* Or any border style that suits your design */
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #45a049; /* Or any hover color that suits your design */
-  }
-
-  .contact-textarea {
-    resize: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: var(--brown);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact-textarea {
+  resize: none;
+}
+
