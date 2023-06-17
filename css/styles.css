@@ -4,9 +4,22 @@
     box-sizing: border-box;
 }
 
-.contact-textarea {
-    resize: none;
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
 }
+
+section {
+    border: solid 1px black;
+}
+
+/* Icons */
+
+
+
+
+/* Contact Form */
 
 .contact-form {
     display: flex;
@@ -35,3 +48,7 @@
   .contact-form button:hover {
     background-color: #45a049; /* Or any hover color that suits your design */
   }
+
+  .contact-textarea {
+    resize: none;
+}
