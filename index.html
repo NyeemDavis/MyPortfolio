@@ -26,7 +26,6 @@
                 <li><a href="#projects-section">Projects</a></li>
                 <li><a href="#hire-me-section">Contact</a></li>
                 <li><a href="#my-services-section">Services</a></li>
-                <li><i class="fa-solid fa-circle-half-stroke fa-xl" style="color: #864D29;"></i></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +34,7 @@
         <section id="intro-section">
             <div class="intro-description">
                 <h4>HI IM NY'EEM</h4>
-                <h1>YOUR NEXT FULLSTACK-DEV</h1>
+                <h1 id="claim">YOUR NEXT FULLSTACK-DEV</h1>
                 <p>Fullstack developer with the passion to use my skills to create smooth web applications. Using technologies such as JavaScript, Express, Node.js</p>
                 <ul id="social-icons">
                     <li><a href="https://github.com/NyeemDavis" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #864D29;"></i></a></li>
@@ -47,40 +46,41 @@
                 </div>
             </div>
         </section>
-
+        <h1 id="about-me-title" class="section-label">ABOUT ME</h1>
         <section id="about-me-section">
-            <h1 class="section-label">ABOUT ME</h1>
-            <div id="personal-description">
-                <div id="about-me-image-and-text">
-                    <img id='personal-photo' src="/images/assets/image.jfif" alt="Picture of me">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Soluta dicta quae culpa, deserunt consectetur molestiae porro odio dolorum optio, 
-                    maxime velit iusto sunt enim repellat, amet similique quod quia ducimus?</p>
+            <div class="about-me-info-container">
+                <div id="personal-description">
+                    <div id="about-me-image-and-text">
+                        <img id='personal-photo' src="/images/assets/image.jfif" alt="Picture of me">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Soluta dicta quae culpa, deserunt consectetur molestiae porro odio dolorum optio, 
+                        maxime velit iusto sunt enim repellat, amet similique quod quia ducimus?</p>
+                    </div>
+                </div>
+                <div id="my-skills">
+                    <p>Technologies I am familiar with</p>
+                    <ul class="skills">
+                        <li class="skill">HTML</li>
+                        <li class="skill">CSS</li>
+                        <li class="skill">Javascript</li>
+                        <li class="skill">React</li>
+                        <li class="skill">Node.js</li>
+                        <li class="skill">Express</li>
+                        <li class="skill">MongoDB</li>
+                        <li class="skill">Git</li>
+                    </ul>
                 </div>
             </div>
-            <div id="my-skills">
-                <p>Technologies I am familiar with</p>
-                <ul class="skills">
-                    <li class="skill">HTML</li>
-                    <li class="skill">CSS</li>
-                    <li class="skill">Javascript</li>
-                    <li class="skill">React</li>
-                    <li class="skill">Node.js</li>
-                    <li class="skill">Express</li>
-                    <li class="skill">MongoDB</li>
-                    <li class="skill">Git</li>
-                </ul>
-            </div>
         </section>
-            <h1 class="section-label">My Projects</h1>
+            <h1 id="about-me-title"  class="section-label">My Projects</h1>
             
         <section id="projects-section">
             <div id="projects">
                 <div class="project">
-                    <h2>OrackleSky(Weather Forecaster)</h2>
+                    <h2>OrakleSky</h2>
                     <p class="project-description">Real-time weather information and multi-day forecasts for locations worldwide. 
-                    Search by city or use the current location. Built with HTML, CSS, JavaScript, and React, 
-                    showcasing front-end skills and weather API integration</p>
+                    Search by city or use the current location. Built with HTML, CSS, JavaScript, React, 
+                    Node.js and Express with Weather API Intergration.</p>
                     <a href="https://www.example.com">View Project</a>
                     <a href="https://github.com/NyeemDavis/WeatherForecastApp">View Code</a>
                     <img  class="project-image" src="" alt="OrakleSky">
@@ -119,7 +119,7 @@
         </section>
 
         <section id="my-services-section">
-            <h2>My services</h2>
+            <h2 id="about-me-title" class="section-label">My services</h2>
             <div id="services">
                 <div class="service">
                     <h3>Web Application Development</h3>
