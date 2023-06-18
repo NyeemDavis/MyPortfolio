@@ -6,6 +6,7 @@
   --black: 	black;
   --my-background-color: black;
   --font: 'Poltawski Nowy', serif;
+  --small-font-size: 24px;
 }
 
 /* Reset Styles */
@@ -27,7 +28,7 @@ body {
   background-color: #f5f5dc;
   padding: 0px 20px 0px 20px;
   margin: 0;
-  font-size: 18px
+  font-size: 14px
 }
 
 /* Main Layout Styles */
@@ -41,7 +42,7 @@ main {
 header {
   display: flex;
   color: white;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   backdrop-filter: blur(2px);
@@ -50,12 +51,12 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
   text-decoration: none;
-  color: white;
+  color: #C19A6B;
+  font-size: var(--small-font-size);
 }
 
 
@@ -105,11 +106,12 @@ section {
 #intro-section {
   color: black;
   display: flex;
-  font-size: 40px;
   justify-content: center;
+  align-items: center;
   justify-content: space-around;
   font-family: 'Roboto Mono', monospace;
-  height: 70vh;
+  height: 100vh;
+  width: 100%;
   margin-top: 40px;
 }
 
@@ -122,23 +124,27 @@ section {
 
 .intro-description h4 {
   color: var(--lightbrown);
+  font-size: 100px;
 }
 
 #intro-section h1{
-  font-size: 25px;
+  font-size: 75px;
 }
 
-#introsection p{
-  margin-bottom: 3px
+#intro-section p{
+  margin-bottom: 3px;
+  font-size: var(--small-font-size);
 }
 
 
 #social-icons {
-  margin: 3px 0px 3px 0px
+  margin: 3px 0px 3px 0px;
+  font-size: var(--small-font-size);
 }
 
 #intro-anchors {
   margin-top: 15px;
+  font-size: var(--small-font-size);
 }
 
 
@@ -166,22 +172,27 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#about-me-info-container {
+  display: flex;
+  width: 100%;
+  height: 1005;
 }
 
 #personal-description {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
 }
 
 
 #about-me-image-and-text {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 50vw;
 }
 
 #personal-photo {
@@ -190,10 +201,6 @@ section {
   max-height: 40vh;
 }
 
-#my-skills {
-  width: 100%;
-  height: 30vh;
-}
 
 /* Projects */
 
