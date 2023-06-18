@@ -11,3 +11,6 @@ What I need to include
 
 - For the projects, link the github and live site. On the github make sure to detail what was used and the process
 - Show some professional projects and maybe something small I have worked on
+
+
+-Have projects slide in, no more 2x2 grid, give project section very large space
