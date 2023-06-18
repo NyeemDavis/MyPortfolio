@@ -25,14 +25,15 @@ body {
   color: var(--black);
   line-height: 1.6;
   background-color: #f5f5dc;
-  padding: 0px 20px 0px 20px
+  padding: 0px 20px 0px 20px;
+  margin: 0;
 }
 
 /* Main Layout Styles */
 main {
   color: white;
   max-width: 100%; 
-  margin: 0 auto;   
+  margin: 0;   
 }
 
 /* Header Styles */
@@ -42,9 +43,18 @@ header {
   justify-content: space-around;
   position: fixed;
   width: 100%;
-  background-color: var(--my-background-color);
-  height: 50px;
+  backdrop-filter: blur(2px);
+  height: 5vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -62,14 +72,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--lightbrown);
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.5s ease; 
 }
 
 nav ul li a:hover {
-  color: var(--lightbrown)
+  color: var(--brown)
 }
 
 
@@ -82,7 +92,9 @@ section {
   border-radius: 20px;
 }
 
-#about-me-section {
+/* Intro Section */
+
+#intro-section {
   background-color: var(--my-background-color);
   color: white;
   display: flex;
@@ -93,17 +105,21 @@ section {
 }
 
 
-.about-me-description {
-  width: 500px;
+.intro-description {
+  width: 50vw;
   display: flex;
   flex-direction: column;
 }
 
-#about-me-section h1{
+.intro-description h4 {
+  color: var(--lightbrown);
+}
+
+#intro-section h1{
   font-size: 25px;
 }
 
-#about-me-section p{
+#introsection p{
   margin-bottom: 3px
 }
 
@@ -112,9 +128,10 @@ section {
   margin: 3px 0px 3px 0px
 }
 
-#about-me-anchors {
-  margin-top: 15px
+#intro-anchors {
+  margin-top: 15px;
 }
+
 
 #hire-me-anchor {
   background-color: var(--brown);
@@ -122,7 +139,7 @@ section {
   padding: 10px;
   color: white;
   transition: background-color 0.3s ease;
-  width: 25%;
+  width: 2.5vw;
   text-align: center;
   margin-top: 10px;
 }
@@ -131,66 +148,55 @@ section {
   color:var(--brown);
 }
 
-#skills-section {
-  background-color: var(--brown);
+/* About me */
+
+#about-me-section {
   height: 40vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: black;
+  background-color: #f5f5dc;
 }
 
-#skills-section h1 {
-  text-align: center;
-}
 
-#all-skills {
-  display: flex;
-  flex-direction: row;
-}
-
-.skills-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  border: solid 5px black;
-}
+/* Projects */
 
 #projects-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  overflow: hidden;
+  max-height: 70vh;
 }
 
-#projects {
-  display: grid;
-  grid-template-columns: 450px 450px;
-  grid-row: auto auto;
-  grid-column-gap: 80px;
-  grid-row-gap: 80px;
-}
+  #projects {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-row: auto auto;
+    grid-column-gap: 8vw;
+    grid-row-gap: 8vw;
+  }
 
-section + h1 {
-  text-align: center;
-  color: black;
-}
+  section + h1 {
+    text-align: center;
+    color: black;
+  }
 
-.project {
-  width: 450px;
-  transition: background-color 0.5s ease;
-  transition: transform all 0.3 ease ;
-  border-radius: 5px;
-  padding: 15px;
-}
-.project:hover {
-  background-color: var(--brown);
-  transform: scale(110%);
-}
+  .project {
+    width: 30vw;
+    transition: background-color 0.5s ease;
+    transition: transform all 0.3 ease ;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  .project:hover {
+    background-color: var(--brown);
+    transform: scale(1.1);
+  }
+
+/* Services */
 
 #my-services-section {
+  background-color: #f5f5dc;
+  color: black;
   height: 50vh;
   display: flex;
   flex-direction: column;
