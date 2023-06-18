@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
     <script src="https://kit.fontawesome.com/c9a860bbe4.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,7 @@
                 <li><a href="#projects-section">Projects</a></li>
                 <li><a href="#hire-me-section">Contact</a></li>
                 <li><a href="#my-services-section">Services</a></li>
-                <li><i class="fa-solid fa-circle-half-stroke header-element" style="color: #864D29;"></i></li>
+                <li><i class="fa-solid fa-circle-half-stroke fa-xl" style="color: #864D29;"></i></li>
             </ul>
         </nav>
     </header>
@@ -48,14 +49,18 @@
         </section>
 
         <section id="about-me-section">
-            <div class="personal-description">
-                <img src="" alt="Picture of me">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Soluta dicta quae culpa, deserunt consectetur molestiae porro odio dolorum optio, 
-                maxime velit iusto sunt enim repellat, amet similique quod quia ducimus?</p>
+            <h1 class="section-label">ABOUT ME</h1>
+            <div id="personal-description">
+                <div id="about-me-image-and-text">
+                    <img id='personal-photo' src="/images/assets/image.jfif" alt="Picture of me">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Soluta dicta quae culpa, deserunt consectetur molestiae porro odio dolorum optio, 
+                    maxime velit iusto sunt enim repellat, amet similique quod quia ducimus?</p>
+                </div>
             </div>
             <div id="my-skills">
-                <ul>
+                <p>Technologies I am familiar with</p>
+                <ul class="skills">
                     <li class="skill">HTML</li>
                     <li class="skill">CSS</li>
                     <li class="skill">Javascript</li>
@@ -67,7 +72,8 @@
                 </ul>
             </div>
         </section>
-            <h1>My Projects</h1>
+            <h1 class="section-label">My Projects</h1>
+            
         <section id="projects-section">
             <div id="projects">
                 <div class="project">
@@ -130,6 +136,7 @@
         </section>
 
         <section id="hire-me-section">
+            <h1 class='section-label'>CONTACT ME</h1>
             <div id="contact-div">
                 <form class="contact-form">
                     <label for="fname">First name:</label>
