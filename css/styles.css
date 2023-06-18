@@ -27,6 +27,7 @@ body {
   background-color: #f5f5dc;
   padding: 0px 20px 0px 20px;
   margin: 0;
+  font-size: 18px
 }
 
 /* Main Layout Styles */
@@ -92,6 +93,13 @@ section {
   border-radius: 20px;
 }
 
+.section-label {
+  color: var(--lightbrown);
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+}
+
 /* Intro Section */
 
 #intro-section {
@@ -151,11 +159,40 @@ section {
 /* About me */
 
 #about-me-section {
-  height: 40vh;
+  height: 60vh;
   color: black;
   background-color: #f5f5dc;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
+#personal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+#about-me-image-and-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#personal-photo {
+  align-self: center;
+  max-width: 20vw;
+  max-height: 40vh;
+}
+
+#my-skills {
+  width: 100%;
+  height: 30vh;
+}
 
 /* Projects */
 
@@ -219,13 +256,11 @@ section {
 
 /* Icons */
 li {
-  list-style: none;
   display: inline-block;
 }
 
 
 .icons {
-  list-style: none;
 }
 
 .icons li {
