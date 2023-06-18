@@ -89,8 +89,8 @@ section {
   margin-bottom: 20px;
   padding: 20px;
   height: 70vh;
-  background-color: var(--my-background-color);
   border-radius: 20px;
+  color: black;
 }
 
 .section-label {
@@ -103,13 +103,14 @@ section {
 /* Intro Section */
 
 #intro-section {
-  background-color: var(--my-background-color);
-  color: white;
+  color: black;
   display: flex;
+  font-size: 40px;
   justify-content: center;
-  align-items: center;
   justify-content: space-around;
   font-family: 'Roboto Mono', monospace;
+  height: 70vh;
+  margin-top: 40px;
 }
 
 
@@ -201,7 +202,6 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-height: 70vh;
 }
 
   #projects {
