@@ -1,0 +1,27 @@
+:root {
+    --background-color: #
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5dc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+#resume-image {
+    box-shadow: 0px 0px 10px black;
+}
