@@ -8,24 +8,18 @@
     <link rel="stylesheet" href="css/animations.css">
     <script src="https://kit.fontawesome.com/c9a860bbe4.js" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&display=swap" rel="stylesheet">
     <title>My Full-Stack Portfolio</title>
 </head>
 <body>
     <header>
-        <h2 class="header-name"><a href="#intro-section">Ny'eem Davis</a></h2>
-        <nav>
-            <ul>
-                <li><a href="#about-me-section ">About Me</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#hire-me-section">Contact</a></li>
-                <li><a href="#my-services-section">Services</a></li>
+        <h2 class="header-name"><a class="header-anchor" href="#intro-section">Ny'eem Davis</a></h2>
+        <nav id="header-nav">
+            <ul id="header-ul">
+                <li class="header-li"><a class="hover-underline-animation header-anchor" href="#about-me-section ">About Me</a></li>
+                <li class="header-li"><a class="hover-underline-animation header-anchor"  href="#projects-section">Projects</a></li>
+                <li class="header-li"><a class="hover-underline-animation header-anchor"  href="#hire-me-section">Contact</a></li>
+                <li class="header-li"><a class="hover-underline-animation header-anchor"  href="#my-services-section">Services</a></li>
             </ul>
         </nav>
     </header>
@@ -37,44 +31,47 @@
                 <h1 id="claim">YOUR NEXT FULLSTACK-DEV</h1>
                 <p>Fullstack developer with the passion to use my skills to create smooth web applications. Using technologies such as JavaScript, Express, Node.js</p>
                 <ul id="social-icons">
-                    <li><a href="https://github.com/NyeemDavis" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #864D29;"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/nyeemdavis/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #864D29;"></i></a></li>
+                    <li><a href="https://github.com/NyeemDavis" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl" style="color: #864D29;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nyeemdavis/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl" style="color: #864D29;"></i></a></li>
                 </ul>
                 <div id="intro-anchors">
-                    <a id="hire-me-anchor" href="#hire-me-section">HIRE ME</a>
-                    <a id="hire-me-anchor" href="resume.html">RESUME</a>
+                    <a class="intro-anchor" href="#hire-me-section">HIRE ME</a>
+                    <a class="intro-anchor" href="resume.html">RESUME</a>
                 </div>
             </div>
         </section>
-        <h1 id="about-me-title" class="section-label">ABOUT ME</h1>
+      
         <section id="about-me-section">
-            <div class="about-me-info-container">
-                <div id="personal-description">
-                    <div id="about-me-image-and-text">
-                        <img id='personal-photo' src="/images/assets/image.jfif" alt="Picture of me">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Soluta dicta quae culpa, deserunt consectetur molestiae porro odio dolorum optio, 
-                        maxime velit iusto sunt enim repellat, amet similique quod quia ducimus?</p>
+            <h1 id="about-me-title" class="section-label">ABOUT ME</h1>
+            <div id="about-me-info-container">
+               
+                    <div id="about-me-description">
+                        <div id="about-me-image-and-text">
+                            <img id='about-me-photo' src="/images/assets/my-photo.jpg" alt="Picture of me">
+                            <h3 id="name">Ny'eem Davis</h3>
+                            <p id="about-me-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Soluta dicta quae culpa, deserunt consectetur molestiae porro odio dolorum optio, 
+                            maxime velit iusto sunt enim repellat, amet similique quod quia ducimus?</p>
+                        </div>
+                    </div>
+                    <div id="my-skills">
+                        <p>Technologies I am familiar with</p>
+                        <ul id="skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">Javascript</li>
+                            <li class="skill">React</li>
+                            <li class="skill">Node.js</li>
+                            <li class="skill">Express</li>
+                            <li class="skill">MongoDB</li>
+                            <li class="skill">Git</li>
+                        </ul>
                     </div>
                 </div>
-                <div id="my-skills">
-                    <p>Technologies I am familiar with</p>
-                    <ul class="skills">
-                        <li class="skill">HTML</li>
-                        <li class="skill">CSS</li>
-                        <li class="skill">Javascript</li>
-                        <li class="skill">React</li>
-                        <li class="skill">Node.js</li>
-                        <li class="skill">Express</li>
-                        <li class="skill">MongoDB</li>
-                        <li class="skill">Git</li>
-                    </ul>
-                </div>
-            </div>
+         
         </section>
-            <h1 id="about-me-title"  class="section-label">My Projects</h1>
-            
         <section id="projects-section">
+            <h1 id="about-me-title"  class="section-label">MY PROJECTS</h1>  
             <div id="projects">
                 <div class="project">
                     <h2>OrakleSky</h2>
@@ -138,20 +135,23 @@
         <section id="hire-me-section">
             <h1 class='section-label'>CONTACT ME</h1>
             <div id="contact-div">
-                <form class="contact-form">
+                <form class="contact-form" action="" method="POST">
                     <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" class="name" required="true">
                     <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname">
+                    <input type="text" id="lname" name="lname" class="name" required="true">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject">
                     <label for="email">Your email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required="true">
                     <label for="textarea">Your message</label>
-                    <textarea class="contact-textarea" placeholder="Enter your message here" name="textarea"></textarea>
-                    <button type="submit">Submit</button>
+                    <textarea class="contact-textarea" placeholder="Enter your message here" name="textarea" required="true"></textarea>
+                    <button id="email-submit" type="submit">Submit</button>
                 </form>
             </div>
         </section>
     </main>
+    
     <footer>
         <p>Copyright &copy; 2023 Ny'eem Davis</p>
     </footer>
