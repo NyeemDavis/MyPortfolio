@@ -9,6 +9,7 @@
   --font: 'Poltawski Nowy', serif;
   --mono-font: 'Roboto Mono', monospace;
   --small-font-size: 24px;
+  --section-label-size: 36px;
 }
 
 /* Reset Styles */
@@ -29,7 +30,6 @@ body {
 
 /* Main Layout Styles */
 main {
-  width: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,7 +91,7 @@ header {
 /* Sections */
 section {
   padding: 0px;
-  height: 100%;
+  min-height: 100vh;
   margin-bottom: 300px;
   color: black;
 }
@@ -102,7 +102,7 @@ section {
   text-decoration-thickness: 5px;
   text-underline-offset: 8px;
   margin-bottom: 2em;
-  font-size: 36px;
+  font-size: var(--section-label-size);
 }
 
 /* Intro Section */
@@ -129,10 +129,10 @@ section {
 
 #intro-description h4 {
   color: var(--brown);
-  font-size: 36px;
+  font-size: var(--small-font-size);
 }
 
-#intro-section h1{
+#claim {
   font-size: 75px;
 }
 
@@ -422,9 +422,31 @@ footer {
 
 /* Media Quieries */
 
-@media screen and(max-width: 600px){
+@media (max-width: 600px){
   :root {
-    --small-font-size: 16px
+    --small-font-size: 1em;
+    --section-label-size: 1.6em
+  }
+
+  .header-name {
+    font-size: 1em;
+  }
+
+  #about-me-photo {
+    width: 30vw;
+    height: 20vh;
+  }
+
+  #projects{
+    align-items: center;
+  }
+
+  #E-commerence, #project-4 {
+    align-self: center;
+  }
+
+  #claim {
+    font-size: 2em;
   }
 }
 
