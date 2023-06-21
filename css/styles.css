@@ -6,7 +6,6 @@
 :root {
   --brown: #3a1f04;
   --lightbrown: #C19A6B;
-  --my-background-color: black;
   --font: 'Poltawski Nowy', serif;
   --mono-font: 'Roboto Mono', monospace;
   --small-font-size: 24px;
@@ -26,7 +25,6 @@ html {
 body {
   line-height: 1.6;
   background-color: #f5f5dc;
-  padding: 0px 0px 0px 20px;
 }
 
 /* Main Layout Styles */
@@ -36,6 +34,19 @@ main {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+/* General Styles */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.line-through {
+  background-color: var(--brown);
+  width: 100%;
+  height: 10px;
 }
 
 /* Header Styles */
@@ -55,7 +66,6 @@ header {
 }
 
 .header-anchor {
-  text-decoration: none;
   color: #C19A6B;
   font-size: var(--small-font-size);
   transition: background-color 0.5s ease; 
@@ -154,7 +164,6 @@ section {
 
 
 .intro-anchor {
-  text-decoration: none;
   background-color: var(--brown);
   border-radius: 3px;
   padding: 10px;
@@ -241,27 +250,51 @@ section {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
+  padding-bottom: 10px;
 }
 
   #projects {
-    display: grid;
-    grid-template-columns: 450px 450px;
-    grid-row: auto auto;
-    grid-column-gap: 8vw;
-    grid-row-gap: 8vw;
+   display: flex;
+   flex-direction: column;
+   width: 90%;
   }
 
   .project {
     width: 30vw;
-    transition: background-color 0.5s ease;
-    transition: transform all 0.3 ease ;
+    transition: background-color 0.8s ease;
+    transition: box-shadow 0.8 ease;
+    transition: color 0.5 ease;
     border-radius: 5px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
   }
+
+  #E-commerence, #project-4 {
+    align-self: flex-end;
+  }
+
+  #E-commerence:hover, #project-4:hover {
+    box-shadow: -10px 8px 5px #C19A6B;
+  }
+
+  #OrakleSky:hover, #project-3:hover {
+    box-shadow: 10px 8px 5px #C19A6B;
+  }
+
+
   .project:hover {
     background-color: var(--brown);
-    transform: scale(1.1);
+    color: var(--lightbrown);
+  }
+
+  .project-image {
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .project-anchor {
+    color: var();
   }
 
 /* Services */
@@ -339,35 +372,64 @@ footer {
 
 /* Animations */
 
-/* Nav Bar */
+  /* Hover Underline */
 
-.hover-underline-animation {
-  position: relative;
-}
+    .hover-underline-animation {
+      position: relative;
+    }
 
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  background-color: #C19A6B;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
+    .hover-underline-animation::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: #C19A6B;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
 
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
+    .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+  /* Scroll Animation */
+
+        /* Project Scroll */
+        .hidden {
+          opacity: 0;
+          transition: opacity 2s ease;
+        }
+        /* First and Second Project */
+        .left {
+          transform: translateX(-100%);
+          transition: transform 1.4s;
+        }
+        /* Second and Fourth Project */
+        .right {
+          transform: translateX(100%);
+          transition: transform 1.4s;
+        }
+
+        .show {
+          opacity: 1;
+          transform: translateX(0);
+        }
 
 
 /* Media Quieries */
 
 @media screen and(max-width: 600px){
   :root {
-    --small-font-size: 18px
+    --small-font-size: 16px
+  }
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }
