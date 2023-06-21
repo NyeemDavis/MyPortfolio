@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <script src="https://kit.fontawesome.com/c9a860bbe4.js" crossorigin="anonymous"></script>
+    <script defer src="js/scroll.js"></script>
 
 
     <title>My Full-Stack Portfolio</title>
@@ -23,7 +24,6 @@
             </ul>
         </nav>
     </header>
-    
     <main>
         <section id="intro-section">
             <div id="intro-description">
@@ -40,12 +40,10 @@
                 </div>
             </div>
         </section>
-      
         <section id="about-me-section">
             <h1 class="section-label">ABOUT ME</h1>
             <div id="about-me-info-container">
-               
-                    <div id="about-me-description">
+                    <div id="about-me-description" class="hidden left">
                         <div id="about-me-image-and-text">
                             <img id='about-me-photo' src="/images/assets/my-photo.jpg" alt="Picture of me">
                             <h3 id="name">Ny'eem Davis</h3>
@@ -54,7 +52,7 @@
                             maxime velit iusto sunt enim repellat, amet similique quod quia ducimus?</p>
                         </div>
                     </div>
-                    <div id="my-skills">
+                    <div id="my-skills" class="hidden right">
                         <p>Technologies I am familiar with</p>
                         <ul id="skills">
                             <li class="skill">HTML</li>
@@ -67,50 +65,49 @@
                             <li class="skill">Git</li>
                         </ul>
                     </div>
-                </div>
-         
+            </div>
         </section>
         <section id="projects-section">
-            <h1 class="section-label">MY PROJECTS</h1>  
+            <h1 class="section-label">MY PROJECTS</h1>
             <div id="projects">
-                <div class="project">
+                <div class="project hidden left" id="OrakleSky">
                     <h2>OrakleSky</h2>
                     <p class="project-description">Real-time weather information and multi-day forecasts for locations worldwide. 
                     Search by city or use the current location. Built with HTML, CSS, JavaScript, React, 
                     Node.js and Express with Weather API Intergration.</p>
-                    <a href="https://www.example.com">View Project</a>
-                    <a href="https://github.com/NyeemDavis/WeatherForecastApp">View Code</a>
-                    <img  class="project-image" src="" alt="OrakleSky">
+                    <a class="project-anchor"  href="https://www.example.com">View Project</a>
+                    <a class="project-anchor"  href="https://github.com/NyeemDavis/WeatherForecastApp">View Code</a>
+                    <img  class="project-image" src="http://holder.ninja/200x150.svg" alt="OrakleSky">
                 </div>
     
-                <div class="project">
+                <div class="project hidden right" id="E-commerence">
                     <h2>E-commerence site(Coming Soon)</h2>
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
                     Quod magni saepe odit rem deserunt aspernatur, ipsam, repellendus voluptatibus exercitationem minima provident 
                     sed? Repellendus, a?</p>
-                    <a href="https://www.example.com">View Project</a>
-                    <a href="">View Code</a>
-                    <img  class="project-image" src="" alt="E-commerence site">
+                    <a class="project-anchor"  href="https://www.example.com">View Project</a>
+                    <a class="project-anchor"  href="">View Code</a>
+                    <img  class="project-image" src="http://holder.ninja/200x150.svg" alt="E-commerence site">
                 </div>
     
-                <div class="project">
+                <div class="project hidden left" id="project-3">
                     <h2>Coming Soon</h2>
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
                     Quod magni saepe odit rem deserunt aspernatur, ipsam, repellendus voluptatibus exercitationem minima provident 
                     sed? Repellendus, a?</p>
-                    <a href="https://www.example.com">View Project</a>
-                    <a href="">View Code</a>
-                    <img  class="project-image" src="" alt="bruh">
+                    <a class="project-anchor"  href="https://www.example.com">View Project</a>
+                    <a class="project-anchor"  href="">View Code</a>
+                    <img  class="project-image" src="http://holder.ninja/200x150.svg" alt="bruh">
                 </div>
     
-                <div class="project">
+                <div class="project hidden right" id="project-4">
                     <h2>Coming Soon</h2>
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
                     Quod magni saepe odit rem deserunt aspernatur, ipsam, repellendus voluptatibus exercitationem minima provident 
                     sed? Repellendus, a?</p>
-                    <a href="https://www.example.com">View Project</a>
-                    <a href="">View Code</a>
-                    <img class="project-image" src="" alt="bruh">
+                    <a class="project-anchor" href="https://www.example.com">View Project</a>
+                    <a class='project-anchor' href="">View Code</a>
+                    <img class="project-image" src="http://holder.ninja/200x150.svg	" alt="bruh">
                 </div>
             </div>
         </section>
@@ -131,7 +128,6 @@
                 </div>
             </div>
         </section> -->
-
         <section id="hire-me-section">
             <h1 class='section-label'>CONTACT ME</h1>
             <div id="contact-div">
