@@ -1,7 +1,12 @@
-document.getElementById('email-submit').addEventListener('submit', function(event) {
-    event.preventDefault()
-    const [fname, lname] = [document.getElementsByName('fname').innerHTML, document.getElementsByName('lname').innerHTML]
-    console.log(fname)
+window.addEventListener('DOMContentLoaded', checkWidthAndRemove);
 
-    alert('Your email has been sent')
-})
+const checkWidthAndRemove = function (element) {
+    let screenWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+        if (screenWidth < 600 && element) {
+            element.parentNode.removeChild(element);
+        }
+}
+
+const elements = document.querySelectorAll('.project-description')
+elements.forEach((el) => checkWidthAndRemove(el))
