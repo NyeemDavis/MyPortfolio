@@ -1,0 +1,101 @@
+/* Media Quieries */
+
+@media screen and (max-width: 1200px) {
+    #claim {
+      font-size: 3em;
+    }
+  
+    #intro-section {
+      flex-direction: column;
+    }
+  
+    #intro-description{
+      width: 100%;
+      margin-bottom: 5vh;
+    }
+  
+    #intro-image-div {
+      margin-top: 5vh;
+      margin-bottom: 10vh
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    #about-me-info-container {
+      flex-direction: column;
+    }
+  
+    #about-me-description {
+      margin-bottom: 10vh;
+    }
+  
+    #my-skills {
+      margin-top: 10vh
+    }
+  }
+  
+  @media (max-width: 600px){
+    :root {
+      --small-font-size: 1em;
+      --section-label-size: 1.6em
+    }
+    
+  
+    .header-name {
+      font-size: 1em;
+    }
+  
+  
+    #intro-image-div {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #claim {
+      font-size: 1em;
+    }
+  
+    /* #intro-description {
+      flex-direction: row;
+    } */
+    #intro-image {
+      width: 50%;
+      height: 50%;
+    }
+  
+    #about-me-photo {
+      width: 30vw;
+      height: 20vh;
+    }
+  
+    #projects{
+      align-items: center;
+    }
+  
+    #E-commerence, #project-4 {
+      align-self: center;
+    }
+  
+    #claim {
+      font-size: 2em;
+    }
+  
+    .project-description{
+      display: none;
+    }
+  }
+  
+  @media screen and(max-width: 440px) {
+    #intro-description {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media(prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+  }
+  
+  
