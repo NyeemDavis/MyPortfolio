@@ -90,8 +90,8 @@ header {
 section {
   padding: 0px;
   min-height: 100vh;
-  margin-bottom: 30vh;
-  margin-top: 30vh;
+  margin-bottom: 20vh;
+  margin-top: 20vh;
   color: black;
 }
 
@@ -184,7 +184,7 @@ section {
 
 #about-me-section {
   height: 60vh;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,91 +366,3 @@ footer {
   color: var(--lightbrown);
   text-align: center;
 }
-
-
-/* Media Quieries */
-
-@media screen and (max-width: 1200px) {
-  #claim {
-    font-size: 3em;
-  }
-
-  #intro-section {
-    flex-direction: column;
-  }
-
-  #intro-description{
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #about-me-info-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px){
-  :root {
-    --small-font-size: 1em;
-    --section-label-size: 1.6em
-  }
-  
-
-  .header-name {
-    font-size: 1em;
-  }
-
-
-  #intro-image-div {
-    display: flex;
-    justify-content: center;
-  }
-
-  #claim {
-    font-size: 1em;
-  }
-
-  /* #intro-description {
-    flex-direction: row;
-  } */
-  #intro-image {
-    width: 50%;
-    height: 50%;
-  }
-
-  #about-me-photo {
-    width: 30vw;
-    height: 20vh;
-  }
-
-  #projects{
-    align-items: center;
-  }
-
-  #E-commerence, #project-4 {
-    align-self: center;
-  }
-
-  #claim {
-    font-size: 2em;
-  }
-
-  .project-description{
-    display: none;
-  }
-}
-
-@media screen and(max-width: 440px) {
-  #intro-description {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media(prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-}
-
