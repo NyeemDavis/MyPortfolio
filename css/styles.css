@@ -35,7 +35,8 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--brown);
-  overflow-x: hidden
+  overflow-x: hidden;
+  margin-top: 15vh;
 }
 
 /* General Styles */
@@ -109,12 +110,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: var(--mono-font);
 }
 
 #intro-image {
-  animation: fadeIn 4s, slideInFromTop 2s;
+  animation: fadeIn 4s, slideInLeft 2s;
 }
 
 
@@ -367,6 +368,35 @@ footer {
 
 /* Animations */
 
+  /* Keyframes */
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
   /* Hover Underline */
 
     .hover-underline-animation {
@@ -422,14 +452,50 @@ footer {
 
 /* Media Quieries */
 
+@media screen and (max-width: 1200px) {
+  #claim {
+    font-size: 3em;
+  }
+
+  #intro-section {
+    flex-direction: column;
+  }
+
+  #intro-description{
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px){
   :root {
     --small-font-size: 1em;
     --section-label-size: 1.6em
   }
+  
 
   .header-name {
     font-size: 1em;
+  }
+
+  #intro-section {
+    display: inline-grid;
+  }
+
+  #intro-image-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #claim {
+    font-size: 1em;
+  }
+
+  /* #intro-description {
+    flex-direction: row;
+  } */
+  #intro-image {
+    width: 50%;
+    height: 50%;
   }
 
   #about-me-photo {
@@ -460,31 +526,3 @@ footer {
   }
 }
 
-/* Keyframes */
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
