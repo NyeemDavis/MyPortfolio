@@ -1,0 +1,77 @@
+/* Animations */
+
+  /* Keyframes */
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* Hover Underline */
+
+  .hover-underline-animation {
+    position: relative;
+  }
+
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #C19A6B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* Scroll Animation */
+
+      /* Project Scroll */
+      .hidden {
+        opacity: 0;
+        transition: opacity 2s ease;
+      }
+      /* First and Second Project */
+      .left {
+        transform: translateX(-100%);
+        transition: transform 1.4s;
+      }
+      /* Second and Fourth Project */
+      .right {
+        transform: translateX(100%);
+        transition: transform 1.4s;
+      }
+
+      .show {
+        opacity: 1;
+        transform: translateX(0);
+      }
