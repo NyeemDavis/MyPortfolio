@@ -1,6 +1,11 @@
 - Responsiveness for all sections
 - New Fonts
 - Overhaul Project Section
+    - Show technologies used
+    - Background image is picture of site, blur the background image on hover, and make the text a bit bigger to standout
+    - If user clicks the div it takes them to the site, make sure there is a link to the projects code
+    - Desktop
+        - 2 x 2 grid, projects take up entire space. Get rid of slide in animation, have them stagger animate in on scroll
 - Style contact form
 - Widths to add respovisness for 
     -320px
@@ -11,26 +16,12 @@
     -1024px
     -1200px
     -1800px
-Boiler code
-/* Small mobile phones */
-@media only screen and (max-width: 320px) {
-    /* CSS rules */
-}
 
-/* Landscape mobile phones to portrait tablets */
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-    /* CSS rules */
-}
 
-/* Landscape tablets to laptops */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* CSS rules */
-}
+- Nav font gets small then big again before the dissapereance
+- Header name font size
 
-/* Large desktops */
-@media only screen and (min-width: 1025px) {
-    /* CSS rules */
-}
+
 
 
 Some mobile design ideas 
