@@ -1,12 +1,13 @@
 /* Media Quieries */
 
 @media screen and (max-width: 1200px) {
-    #claim {
-      font-size: 3em;
-    }
   
     #intro-section {
       flex-direction: column;
+    }
+
+    #claim {
+        font-size: 3em;
     }
   
     #intro-description{
@@ -33,39 +34,45 @@
       margin-top: 10vh
     }
   }
+
+  @media (max-width: 440px)  {
+    :root {
+      --small-font-size: 40rem;
+    }
+  }
   
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     :root {
       --small-font-size: 1em;
       --section-label-size: 1.6em
     }
     
+    section {
+      width: 100vw;
+      height: 100vh;
+    }
   
     .header-name {
       font-size: 1em;
     }
   
-  
-    #intro-image-div {
-      display: flex;
-      justify-content: center;
-    }
-  
     #claim {
-      font-size: 1em;
+      font-size: 2em;
     }
-  
-    /* #intro-description {
-      flex-direction: row;
-    } */
+
+    #intro-image-div {
+        display: flex;
+      }
+    
+
     #intro-image {
-      width: 50%;
-      height: 50%;
+      width: 200px;
+      height: 200px;
     }
   
     #about-me-photo {
-      width: 30vw;
-      height: 20vh;
+      width: 200px;
+      height: 250px;
     }
   
     #projects{
@@ -75,20 +82,9 @@
     #E-commerence, #project-4 {
       align-self: center;
     }
-  
-    #claim {
-      font-size: 2em;
-    }
-  
+
     .project-description{
       display: none;
-    }
-  }
-  
-  @media screen and(max-width: 440px) {
-    #intro-description {
-      align-items: center;
-      justify-content: center;
     }
   }
   

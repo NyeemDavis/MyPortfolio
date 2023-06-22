@@ -8,8 +8,8 @@
   --lightbrown: #C19A6B;
   --font: 'Poltawski Nowy', serif;
   --mono-font: 'Roboto Mono', monospace;
-  --small-font-size: 24px;
-  --section-label-size: 36px;
+  --small-font-size: 1.5rem;
+  --section-label-size: 2.25rem;
 }
 
 /* Reset Styles */
@@ -53,9 +53,9 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(2px);
-  border-radius: 2px;
-  padding: 0px 10px;
+  backdrop-filter: blur(0.125rem);
+  border-radius: 0.125rem;
+  padding: 0rem 0.625rem;
   height: 5vh;
   top: 0;
   right: 0;
@@ -79,7 +79,7 @@ header {
 }
 
 .header-li{
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 
@@ -88,7 +88,7 @@ header {
 
 /* Sections */
 section {
-  padding: 0px;
+  padding: 0rem;
   min-height: 100vh;
   margin-bottom: 20vh;
   margin-top: 20vh;
@@ -98,9 +98,9 @@ section {
 .section-label {
   color: var(--lightbrown);
   text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 8px;
-  margin-bottom: 2em;
+  text-decoration-thickness: 0.3125rem;
+  text-underline-offset: 0.5rem;
+  margin-bottom: 2rem;
   font-size: var(--section-label-size);
 }
 
@@ -109,14 +109,18 @@ section {
 #intro-section {
   color: black;
   display: flex;
-  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-family: var(--mono-font);
+}
+
+#intro-image-dv {
+  width: 50%;
 }
 
 #intro-image {
   animation: fadeIn 4s, slideInLeft 2s;
+  border-radius: 5rem;
 }
 
 
@@ -124,45 +128,42 @@ section {
   display: flex;
   flex-direction: column;
   justify-self: flex-start;
-  padding: 0em 10em;
-  width: 50%;
+  padding: 0rem 10rem;
   color: white;
   animation: fadeIn 4s, slideInLeft 2s;
 }
 
 #intro-description h4 {
   color: var(--lightbrown);
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 #claim {
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 
 #intro-section p{
-  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
   font-size: var(--small-font-size);
 }
 
 
 #social-icons {
-  margin: 3px 0px 3px 0px;
+  margin: 0.1875rem 0rem 0.1875rem 0rem;
   font-size: var(--small-font-size);
   list-style: none;
 }
 
 #social-icons li {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
   display: inline-block;
 }
 
 
 
 #intro-anchors {
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   font-size: var(--small-font-size);
-  height: 50px;
-  width: 100%;
 }
 
 
@@ -176,7 +177,7 @@ section {
   text-align: center;
 }
 
-.intro-anchor::after {
+.intro-anchor:hover {
   color:var(--brown);
 }
 
