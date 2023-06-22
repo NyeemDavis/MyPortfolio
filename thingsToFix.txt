@@ -31,3 +31,7 @@ Boiler code
 @media only screen and (min-width: 1025px) {
     /* CSS rules */
 }
+
+
+Some mobile design ideas 
+    - When page is scrolled down, the nav names animate back in taking up the entire nav space, and reanimating out when scrolled back up near the top. showing the name with a dropdown
