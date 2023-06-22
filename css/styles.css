@@ -469,6 +469,12 @@ footer {
     align-items: center;
   }
 
+  .project {
+    width: 100%;
+    margin: 5vh 0px 5vh 0px;
+    background-color: var(--lightbrown);
+  }
+
   #E-commerence, #project-4 {
     align-self: center;
   }
