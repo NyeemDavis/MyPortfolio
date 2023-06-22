@@ -1,0 +1,33 @@
+- Responsiveness for all sections
+- New Fonts
+- Overhaul Project Section
+- Style contact form
+- Widths to add respovisness for 
+    -320px
+    -480px
+    -600px
+    -768px
+    -900px
+    -1024px
+    -1200px
+    -1800px
+Boiler code
+/* Small mobile phones */
+@media only screen and (max-width: 320px) {
+    /* CSS rules */
+}
+
+/* Landscape mobile phones to portrait tablets */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    /* CSS rules */
+}
+
+/* Landscape tablets to laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* CSS rules */
+}
+
+/* Large desktops */
+@media only screen and (min-width: 1025px) {
+    /* CSS rules */
+}
