@@ -273,9 +273,9 @@ section {
   }
 
   .project {
+    background-color: var(--lightbrown);
     width: 30vw;
     transition: background-color 0.8s ease;
-    transition: box-shadow 0.8 ease;
     transition: color 0.5 ease;
     border-radius: 5px;
     padding: 15px;
@@ -292,11 +292,11 @@ section {
   }
 
   #E-commerence:hover, #project-4:hover {
-    box-shadow: -10px 8px 5px #C19A6B;
+    box-shadow: 0px 0px 10px #C19A6B;
   }
 
   #OrakleSky:hover, #project-3:hover {
-    box-shadow: 10px 8px 5px #C19A6B;
+    box-shadow: 0px 0px 10px #C19A6B;
   }
 
 
@@ -472,7 +472,6 @@ footer {
   .project {
     width: 100%;
     margin: 5vh 0px 5vh 0px;
-    background-color: var(--lightbrown);
   }
 
   #E-commerence, #project-4 {
