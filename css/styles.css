@@ -41,7 +41,7 @@ main {
   background-color: var(--brown);
   overflow-x: hidden;
   margin-top: 15vh;
-  width: 99vw;
+  width: 100vw;
 }
 
 /* General Styles */
@@ -380,7 +380,15 @@ footer {
 
 
  /* Small mobile phones */
- @media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
+  /* CSS rules */
+  #header-ul {
+    display: none;
+  }
+}
+
+/* Landscape mobile phones to portrait tablets */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
   /* CSS rules */
   :root {
     --small-font-size: 4.267vw;
@@ -391,14 +399,10 @@ footer {
     width: 99vw;
   }
 
-  #section {
-    margin: 0px 0px 0px 0px;
+  section {
+    margin-top: 0;
+    min-height: 40vh;
   }
-
-  .divder {
-    display: block;
-  }
-
 
   header {
     position: unset;
@@ -408,9 +412,13 @@ footer {
     align-self: center;
   }
 
+  #intro-section {
+    text-align: center;
+    width: 100%;
+  }
 
-  #header-ul{
-    display: none;
+  #intro-description {
+    padding: 0;
   }
 
   #intro-description h4 {
@@ -421,13 +429,14 @@ footer {
     font-size: 1.5rem;
   }
 
-  #intro-section {
-    text-align: center;
-    width: 95%;
-  }
-
   #intro-image-div {
     display: none;
+  }
+
+
+  #about-me-section{
+    margin-top: 50vh;
+    margin-bottom: 50vh;
   }
 
   #about-me-description {
@@ -436,17 +445,37 @@ footer {
 
   #about-me-info-container {
     flex-direction: column;
+    text-align: center;
   }
 
   #about-me-photo {
     width: 250px;
     height: 250px;
   }
-}
 
-/* Landscape mobile phones to portrait tablets */
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* CSS rules */
+  #my-skills {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects {
+    align-items: center;
+  }
+
+  #E-commerence, #project-4 {
+    align-self: center;
+  }
+
+  .project-description {
+    display: none;
+  }
 }
 
 /* Landscape tablets to laptops */
@@ -459,10 +488,10 @@ footer {
   /* CSS rules */
 }
 
-@media screen and (max-width: 1300px) {
-  
+
+@media screen and (max-width: 1300px) {  
   #intro-section {
     flex-direction: column;
   }
+
 }
-  
