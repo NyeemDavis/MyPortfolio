@@ -90,7 +90,8 @@ header {
 section {
   padding: 0px;
   min-height: 100vh;
-  margin-bottom: 300px;
+  margin-bottom: 30vh;
+  margin-top: 30vh;
   color: black;
 }
 
@@ -466,6 +467,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 800px) {
+  #about-me-info-container {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 600px){
   :root {
     --small-font-size: 1em;
@@ -477,9 +484,6 @@ footer {
     font-size: 1em;
   }
 
-  #intro-section {
-    display: inline-grid;
-  }
 
   #intro-image-div {
     display: flex;
@@ -517,6 +521,13 @@ footer {
 
   .project-description{
     display: none;
+  }
+}
+
+@media screen and(max-width: 440px) {
+  #intro-description {
+    align-items: center;
+    justify-content: center;
   }
 }
 
