@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: 'Satoshi-Bold';
-    src: url('/files/fonts/Satoshi-fonts/fonts/Satoshi-Bold.woff2') format('woff2'),
-         url('/files/fonts/Satoshi-fonts/fonts/Satoshi-Bold.woff') format('woff'),
-         url('/files/fonts/Satoshi-fonts/fonts/Satoshi-Bold.ttf') format('truetype');
+    src: url('../files/fonts/Satoshi-fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../files/fonts/Satoshi-fonts/Satoshi-Bold.woff') format('woff'),
+         url('../files/fonts/Satoshi-fonts/Satoshi-Bold.ttf') format('truetype');
          font-weight: 700;
          font-display: swap;
          font-style: normal;
@@ -63,7 +63,7 @@ html {
 }
 
 body {
-  font-family: 'Satoshi-Bold', 'Courier';
+  font-family: 'NyghtSerifDark', 'Roboto Mono', monospace;
   line-height: 1.6;
   background-color: var(--brown);
   letter-spacing: 1.8px;  
