@@ -5,6 +5,21 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&family=Roboto+Mono:wght@500&display=swap');
 
+@font-face {
+  font-family: 'NyghtSerif';
+  src: url('../files/fonts/NyghtSerif-Dark.woff') format('woff'),
+       url('../files/fonts/NyghtSerif-Dark.woff2') format('woff2');
+       font-weight: 400;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: 'NyghtSerifItalic';
+  src:  url('../files/fonts/NyghtSerif-DarkItalic.woff') format('woff'),
+        url('../files/fonts/NyghtSerif-DarkItalic.woff') format('woff2');
+        font-weight: 400;
+        font-display: swap;
+}
 /* Global variables */
 
 :root {
@@ -24,7 +39,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poltawski Nowy', serif;
+  font-family: 'NyghtSerif', serif;
 }
 
 body {
@@ -64,7 +79,6 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(0.125rem);
   border-radius: 0.125rem;
   padding: 0rem 0.625rem;
   height: 5vh;
@@ -125,7 +139,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--mono-font);
 }
 
 #intro-image-dv {
@@ -150,6 +163,8 @@ section {
 #intro-description h4 {
   color: var(--lightbrown);
   font-size: 2.5rem;
+  font-family: 'NyghtSerifItalic', serif;
+  letter-spacing: 2px;
 }
 
 #claim {
@@ -264,54 +279,56 @@ section {
 #projects-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
 }
 
   #projects {
-   display: flex;
-   flex-direction: column;
-   width: 90%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 2.0833333333333vh 2.0833333333333vw;
+   width: 100%;
   }
 
   .project {
-    width: 30vw;
+    justify-self: center;
+    border-radius: 10px;
+    border: 10px white solid;
     transition: background-color 0.8s ease;
     transition: color 0.5 ease;
-    border-radius: 10px;
-    border: solid 3px white;
-    padding: 15px;
     display: flex;
     flex-direction: column;
-    background-image: url('https://i.imgur.com/5XZQq8I.png');
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    overflow: hidden;
+  }
+
+  .project-info-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-info-container:hover {
+    backdrop-filter: blur(5px);
   }
 
   .project-description {
-   display: block;
+    display: none;
   }
-
-  #E-commerence, #project-4 {
-    align-self: flex-end;
-  }
-
-  #E-commerence:hover, #project-4:hover {
-    box-shadow: 0px 0px 10px #C19A6B;
-  }
-
-  #OrakleSky:hover, #project-3:hover {
-    box-shadow: 0px 0px 10px #C19A6B;
-  }
-
 
   .project:hover {
+    box-shadow: 0px 0px 10px #C19A6B;
     color: var(--lightbrown);
-  }
-
-  .project-image {
-    border-radius: 5px;
-    margin-bottom: 5px;
+    backdrop-filter: blur(20px);
   }
 
   .project-anchor {
@@ -476,11 +493,14 @@ footer {
   }
 
   #projects {
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px 0px;
+    justify-content: center;
+    width: 100%;
   }
 
   .project {
-    width: 100%;
     margin: 5vh 0px 5vh 0px;
   }
 
