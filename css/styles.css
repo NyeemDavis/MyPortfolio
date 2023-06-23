@@ -66,8 +66,7 @@ body {
   font-family: 'Satoshi-Bold', 'Courier';
   line-height: 1.6;
   background-color: var(--brown);
-  letter-spacing: 1.8px;
-  
+  letter-spacing: 1.8px;  
 }
 
 /* Main Layout Styles */
