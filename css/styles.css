@@ -5,20 +5,31 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&family=Roboto+Mono:wght@500&display=swap');
 
+  /* Satoshi Fonts */
+  @import url('/css/cssfonts/satoshi.css');
+
 @font-face {
-  font-family: 'NyghtSerif';
-  src: url('../files/fonts/NyghtSerif-Dark.woff') format('woff'),
-       url('../files/fonts/NyghtSerif-Dark.woff2') format('woff2');
+  font-family: 'NyghtSerifDark';
+  src: url('../files/fonts/Nyght-Serif/NyghtSerif-Dark.woff') format('woff'),
+       url('../files/fonts/Nyght-Serif/NyghtSerif-Dark.woff2') format('woff2');
        font-weight: 400;
        font-display: swap;
 }
 
 @font-face {
   font-family: 'NyghtSerifItalic';
-  src:  url('../files/fonts/NyghtSerif-DarkItalic.woff') format('woff'),
-        url('../files/fonts/NyghtSerif-DarkItalic.woff') format('woff2');
-        font-weight: 400;
+  src:  url('../files/fonts/Nyght-Serif/NyghtSerif-DarkItalic.woff') format('woff'),
+        url('../files/fonts/Nyght-Serif/NyghtSerif-DarkItalic.woff2') format('woff2');
+        font-weight: 700;
         font-display: swap;
+}
+
+@font-face {
+  font-family: 'NyghtSerifLight';
+  src: url('../files/fonts/Nyght-Serif/NyghtSerif-Light.woff') format('woff'),
+       url('../files/fonts/Nyght-Serif/NyghtSerif-Light.woff2') format('woff2');
+       font-weight: 400;
+       font-display: swap;
 }
 /* Global variables */
 
@@ -27,7 +38,7 @@
   --lightbrown: #C19A6B;
   --font: 'Poltawski Nowy', serif;
   --mono-font: 'Roboto Mono', monospace;
-  --small-font-size: 1.5rem;
+  --small-font-size: 1.8rem;
   --section-label-size: 2.25rem;
 }
 
@@ -39,12 +50,13 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'NyghtSerif', serif;
 }
 
 body {
+  font-family: 'NyghtSerifLight', 'NyghtSerifLight', 'serif';
   line-height: 1.6;
   background-color: var(--brown);
+  letter-spacing: 1.8px;
 }
 
 /* Main Layout Styles */
@@ -64,6 +76,7 @@ main {
 a {
   text-decoration: none;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .divider {
@@ -99,7 +112,7 @@ header {
 }
 
 .header-anchor:hover {
-  color: var(--brown)
+  color: var(--lightbrown)
 }
 
 #header-ul {
@@ -163,8 +176,10 @@ section {
 #intro-description h4 {
   color: var(--lightbrown);
   font-size: 2.5rem;
-  font-family: 'NyghtSerifItalic', serif;
-  letter-spacing: 2px;
+}
+
+#intro-section h4, #claim {
+  font-family: 'NyghtSerifItalic', 'serif';
 }
 
 #claim {
@@ -192,18 +207,20 @@ section {
 
 #intro-anchors {
   margin-top: 1.5625rem;
-  font-size: var(--small-font-size);
+  height: 12vh;
 }
 
 
 .intro-anchor {
+  font-size: 1.3rem;
   background-color: var(--lightbrown);
-  border-radius: 3px;
+  border-radius: 40px;
   padding: 10px;
   color: white;
   transition: background-color 0.3s ease;
   width: 2.5vw;
   text-align: center;
+  margin-top: 1.25rem;
 }
 
 .intro-anchor:hover {
@@ -282,6 +299,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
+  font-family: 'Satoshi-Regular', 'sans-serif';
 }
 
   #projects {
@@ -452,13 +470,16 @@ footer {
     font-size: 1.5rem;
   }
 
-
   #claim {
     font-size: 1.5rem;
   }
 
   #intro-image-div {
     margin-top: 10vh;
+  }
+
+  #intro-anchor {
+    font-size: 1.2rem;
   }
 
   #about-me-section{
