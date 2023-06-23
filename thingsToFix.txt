@@ -26,3 +26,10 @@
 
 Some mobile design ideas 
     - When page is scrolled down, the nav names animate back in taking up the entire nav space, and reanimating out when scrolled back up near the top. showing the name with a dropdown
+
+
+Remember this
+    - Filter on hover
+        - overflow hidden
+        - container for image, container for text
+        - posistion absolute on the container for text, width 100%, height 100%, top 0, left 0, z-index 1. On hover, backdrop-filter blur(whatever you want)
