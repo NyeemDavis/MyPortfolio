@@ -530,7 +530,11 @@ footer {
     height: 250px;
   }
 
- 
+  #my-skills {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+  }
 
   .project {
     margin: 5vh 0px 5vh 0px;
@@ -571,6 +575,8 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
+
 
   #skills {
     display: flex;
