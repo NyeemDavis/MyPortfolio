@@ -135,7 +135,7 @@
 
 @font-face {
   font-family: 'Satoshi-Bold';
-  src: url('/files/fonts/Satoshi-fonts/fonts/Satoshi-Bold.woff2') format('woff2'),
+  src: url('/files/fonts/Satoshi-fonts/Satoshi-Bold.woff2') format('woff2'),
        url('/files/fonts/Satoshi-fonts/fonts/Satoshi-Bold.woff') format('woff'),
        url('/files/fonts/Satoshi-fonts/fonts/Satoshi-Bold.ttf') format('truetype');
        font-weight: 700;
