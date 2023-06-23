@@ -43,3 +43,4 @@ Remember this
 
 - Check any fixed values, px and percentages, and make sure they are responsive
 - Fix extra width on mobile
+- Collapsing margins around 760px height and under on mobile
