@@ -6,6 +6,7 @@
     - If user clicks the div it takes them to the site, make sure there is a link to the projects code
     - Desktop
         - 2 x 2 grid, projects take up entire space. Get rid of slide in animation, have them stagger animate in on scroll
+    - Fix project on mobile design, drop down the description, and make the image smaller
 - Style contact form
 - Widths to add respovisness for 
     -320px
@@ -37,3 +38,8 @@ Remember this
 - Technologies I know 
     - Light Brown Icon with name of technology under it
     - size icons down for mobile, and make them a bit bigger for desktop
+
+- Work on contact form
+
+- Check any fixed values, px and percentages, and make sure they are responsive
+- Fix extra width on mobile
