@@ -76,7 +76,7 @@
       /* First and Second Project */
       .left {
         transform: translateX(-100%);
-        transition: transform 1.4s;
+        transition: transform 1s;
       }
       /* Second and Fourth Project */
       .right {
