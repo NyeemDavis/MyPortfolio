@@ -51,6 +51,7 @@
   --section-label-size: 2.25rem;
 }
 
+
 /* Reset Styles */
 html {
   scroll-behavior: smooth;
@@ -66,6 +67,7 @@ body {
   line-height: 1.6;
   background-color: var(--brown);
   letter-spacing: 1.8px;
+  
 }
 
 /* Main Layout Styles */
@@ -148,11 +150,9 @@ section {
 
 .section-label {
   color: var(--lightbrown);
-  text-decoration: underline;
-  text-decoration-thickness: 0.3125rem;
-  text-underline-offset: 0.5rem;
   margin-bottom: 2rem;
   font-size: var(--section-label-size);
+  font-family: 'NyghtSerifDark', 'serif';
 }
 
 /* Intro Section */
@@ -162,6 +162,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 
 #intro-image-dv {
@@ -294,7 +295,9 @@ section {
 
 #skills {
   list-style: none;
+  display: flex;
 }
+
 
 #bruh {
   width: 100%;
@@ -307,9 +310,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding-bottom: 10px;
-  font-family: 'Satoshi-Regular', 'sans-serif';
 }
 
   #projects {
@@ -317,10 +318,11 @@ section {
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    grid-gap: 2.0833333333333vh 2.0833333333333vw;
-   width: 100%;
   }
 
   .project {
+    color: var(--lightbrown);
+    font-family: 'Satoshi-Bold', 'sans-serif';
     justify-self: center;
     border-radius: 10px;
     border: 10px white solid;
@@ -349,19 +351,37 @@ section {
     backdrop-filter: blur(5px);
   }
 
-  .project-description {
-    display: none;
-  }
-
   .project:hover {
     box-shadow: 0px 0px 10px #C19A6B;
-    color: var(--lightbrown);
+    color: black;
     backdrop-filter: blur(20px);
   }
 
-  .project-anchor {
-    color: var();
+  .project-description {
+    align-self: center;
+    width: 50%;
   }
+
+  .project-anchor {
+    color: white;;
+  }
+
+  .project-anchor:hover {
+    color: var(--lightbrown);
+  }
+
+  
+.icon {
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0px 15px 0px 15px;
+};
+
+
 
 /* Services */
 
@@ -451,12 +471,16 @@ footer {
 
   main {
     justify-content: center;
+    align-items: center;
     width: 99vw;
   }
 
   section {
+    justify-content: center;
+    align-items: center;
     margin-top: 0;
     min-height: 40vh;
+    width: 85%;
   }
 
   header {
@@ -465,7 +489,7 @@ footer {
 
   #intro-section {
     text-align: center;
-    width: 100%;
+    width: 80vw;
   }
 
   #intro-section p {
@@ -524,15 +548,16 @@ footer {
   }
 
   #projects {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 0px 0px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+
   }
 
   .project {
     margin: 5vh 0px 5vh 0px;
+    width: 50%;
   }
 
   #E-commerence, #project-4 {
@@ -547,6 +572,9 @@ footer {
 /* Landscape tablets to laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* CSS rules */
+  .project {
+    width: 90%;
+  }
 }
 
 /* Large desktops */
