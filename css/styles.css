@@ -181,7 +181,7 @@ section {
   justify-self: flex-start;
   padding: 0rem 10rem 0rem 10rem;
   color: white;
-  animation: fadeIn 4s, slideInLeft 2s;
+  animation: slideInLeft 1.4s;
 }
 
 #intro-description h4 {
@@ -278,10 +278,10 @@ section {
 #about-me-photo {
   align-self: center;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 43.05705059203444vh;
+  height: 43.05705059203444vh;
   border-radius: 50%;
-  border: var(--brown) solid 8px;
+  border: var(--lightbrown) solid 8px;
 }
 
 #name {
@@ -289,20 +289,16 @@ section {
 }
 
 #my-skills {
-  margin-left: 10vw;
   width: 50%;
+  text-align: center;
 }
 
 #skills {
   list-style: none;
   display: flex;
+  justify-content: center;
+  
 }
-
-
-#bruh {
-  width: 100%;
-}
-
 
 /* Projects */
 
