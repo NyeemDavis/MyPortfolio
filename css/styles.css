@@ -72,11 +72,15 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
+  font-size: var(--small-font-size);
+}
+
+#header-name {
+  color: #C19A6B;
 }
 
 .header-anchor {
   color: #C19A6B;
-  font-size: var(--small-font-size);
   transition: background-color 0.5s ease; 
 }
 
@@ -273,14 +277,15 @@ section {
   }
 
   .project {
-    background-color: var(--lightbrown);
     width: 30vw;
     transition: background-color 0.8s ease;
     transition: color 0.5 ease;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: solid 3px white;
     padding: 15px;
     display: flex;
     flex-direction: column;
+    background-image: url('https://i.imgur.com/5XZQq8I.png');
   }
 
   .project-description {
@@ -301,7 +306,6 @@ section {
 
 
   .project:hover {
-    background-color: var(--brown);
     color: var(--lightbrown);
   }
 
@@ -380,13 +384,16 @@ footer {
 
 
  /* Small mobile phones */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   /* CSS rules */
-  #header-ul {
+  #header-nav, #header-ul {
     display: none;
   }
   #intro-image-div {
     display: none;
+  }
+  header {
+    justify-content: center;
   }
 }
 
@@ -409,10 +416,6 @@ footer {
 
   header {
     position: unset;
-  }
-
-  #header-name {
-    align-self: center;
   }
 
   #intro-section {
