@@ -88,12 +88,6 @@ a {
   cursor: pointer;
 }
 
-.divider {
-  width: 100%;
-  height: 0.625rem;
-  background-color: var(--lightbrown);
-  margin: 1.25rem 0rem;
-}
 
 /* Header Styles */
 header {
@@ -136,15 +130,12 @@ header {
 
 /* Sections */
 section {
-  min-height: 100vh;
-  padding-bottom: 20vh;
-  padding-top: 20vh;
+  max-height: 120vh;
   color: black;
 }
 
 .section-label {
   color: var(--lightbrown);
-  margin-bottom: 2rem;
   font-size: var(--section-label-size);
   font-family: 'NyghtSerifDark', 'serif';
 }
@@ -278,21 +269,36 @@ section {
   border: var(--lightbrown) solid 8px;
 }
 
+#about-me-paragraph {
+  text-align: center;
+}
+
 #name {
   align-self: center;
 }
 
 #my-skills {
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
-#skills {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  
+#skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1px; /* Adjust the gap between the icons as desired */
+  align-items: center;
+  justify-items: center;
 }
+
+.icon {
+  height: 64px;
+  width: 64px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+};
 
 /* Projects */
 
@@ -300,7 +306,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-bottom: 10px;
+}
+
+.section-label {
+  text-align: center;
 }
 
   #projects {
@@ -362,15 +373,7 @@ section {
   }
 
   
-.icon {
-  height: 64px;
-  width: 64px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  margin: 0px 15px 0px 15px;
-};
+
 
 
 
@@ -447,10 +450,7 @@ footer {
  /* Small mobile phones */
 @media only screen and (max-width: 500px) {
   /* CSS rules */
-  #header-nav, #header-ul {
-    display: none;
-  }
-  #intro-image-div {
+  #header-name {
     display: none;
   }
   header {
@@ -493,11 +493,11 @@ footer {
   }
 
   #intro-description h4 {
-    font-size: 1.5rem;
+    font-size: 4.314994606256742vw;
   }
 
   #claim {
-    font-size: 1.5rem;
+    font-size: 7.766990291262136vw;
   }
 
   #intro-image-div {
@@ -523,8 +523,13 @@ footer {
   }
 
   #about-me-photo {
-    width: 250px;
-    height: 250px;
+    width: 26.680896478121664vh;
+    height: 26.680896478121664vh;
+  }
+
+  #about-me-paragraph {
+    width: 50%;
+    align-self: center;
   }
 
   #my-skills {
@@ -546,12 +551,17 @@ footer {
   }
 }
 
+/* @media screen and (max-width: 375px) {
+  #about-me-photo {
+    width: 175px;
+    height: 175px;
+  }
+} */
+
 /* Landscape tablets to laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* CSS rules */
-  .project {
-    width: 90%;
-  }
+ 
 }
 
 /* Large desktops */
@@ -565,6 +575,14 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  
+  #project-section {
+    padding-bottom: 170vh;
+  }
+
+  #hire-me-section {
+    padding-top: 70vh;
+  }
 
   #projects {
     display: flex;
@@ -572,8 +590,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
-
 
   #skills {
     display: flex;
@@ -588,6 +604,10 @@ footer {
 @media (oreintation: landscape) {
   :root {
     --small-font-size: 8px;
+  }
+
+  body { 
+    background-color: yellow;
   }
 
   header {
