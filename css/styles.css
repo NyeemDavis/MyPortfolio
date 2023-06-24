@@ -47,7 +47,7 @@
 :root {
   --brown: #3a1f04;
   --lightbrown: #C19A6B;
-  --small-font-size: 1.8rem;
+  --small-font-size: 16px;
   --section-label-size: 2.25rem;
 }
 
@@ -66,7 +66,7 @@ body {
   font-family: 'NyghtSerifDark', 'Roboto Mono', monospace;
   line-height: 1.6;
   background-color: var(--brown);
-  letter-spacing: 1.8px;  
+  letter-spacing: 1.8px; 
 }
 
 /* Main Layout Styles */
@@ -76,8 +76,8 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--brown);
+  overflow-y: hidden;
   overflow-x: hidden;
-  margin-top: 15vh;
   width: 100vw;
 }
 
@@ -86,7 +86,6 @@ main {
 a {
   text-decoration: none;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .divider {
@@ -135,15 +134,11 @@ header {
   margin-right: 0.625rem;
 }
 
-
-
-
-
 /* Sections */
 section {
   min-height: 100vh;
-  margin-bottom: 20vh;
-  margin-top: 20vh;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
   color: black;
 }
 
@@ -358,7 +353,8 @@ section {
   }
 
   .project-anchor {
-    color: white;;
+    color: white;
+    display: inline-block;
   }
 
   .project-anchor:hover {
@@ -404,8 +400,13 @@ section {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  gap: 10px;
+  gap: 1.0787486515641855vh;
+  color: white;
 }
+
+ input {
+  height: 5vh;
+ }
 
 .contact-form label {
   margin-bottom: 5px;
@@ -458,24 +459,21 @@ footer {
 }
 
 /* Landscape mobile phones to portrait tablets */
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+@media only screen and (min-width: 321px) and (max-width: 820px) and (max-height: 1024px) {
   /* CSS rules */
-  :root {
-    --small-font-size: 4.267vw;
-  }
-
   main {
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    width: 99vw;
+    width: 100%;
   }
 
   section {
     justify-content: center;
     align-items: center;
-    margin-top: 0;
     min-height: 40vh;
-    width: 85%;
+  }
+  #projects-section {
+    padding-top: 20vh;
   }
 
   header {
@@ -504,7 +502,7 @@ footer {
   }
 
   #intro-image-div {
-    margin-top: 10vh;
+    padding-top: 10vh;
   }
 
   #intro-anchor {
@@ -533,7 +531,6 @@ footer {
   #my-skills {
     width: 100%;
     text-align: center;
-    margin: 20px 0px 20px 0px;
   }
 
   .project {
@@ -585,4 +582,15 @@ footer {
   }
 
 
+}
+
+
+@media (oreintation: landscape) {
+  :root {
+    --small-font-size: 8px;
+  }
+
+  header {
+    position: fixed;
+  }
 }
