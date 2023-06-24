@@ -448,13 +448,19 @@ footer {
 
 
  /* Small mobile phones */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
   /* CSS rules */
   #header-name {
     display: none;
   }
   header {
     justify-content: center;
+  }
+
+  #skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1.8867924528301887vw;
   }
 }
 
@@ -470,8 +476,9 @@ footer {
   section {
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+    min-height: 80vh;
   }
+
   #projects-section {
     padding-top: 20vh;
   }
@@ -601,16 +608,9 @@ footer {
 }
 
 
-@media (oreintation: landscape) {
-  :root {
-    --small-font-size: 8px;
+@media (orientation: landscape) {
+  #intro-section {
+    color: yellow;
   }
 
-  body { 
-    background-color: yellow;
-  }
-
-  header {
-    position: fixed;
-  }
 }
