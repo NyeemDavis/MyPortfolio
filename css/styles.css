@@ -482,7 +482,6 @@ footer {
 
   #intro-section {
     text-align: center;
-    width: 80vw;
   }
 
   #intro-section p {
@@ -564,6 +563,7 @@ footer {
 @media screen and (max-width: 1300px) {  
   #intro-section {
     flex-direction: column;
+    text-align: center;
   }
 
   #projects {
