@@ -538,9 +538,6 @@ footer {
     width:75%;
   }
 
-  .project-container {
-  }
-
   .project {
     width: 65vw;
     font-size: 0.9rem;
@@ -588,5 +585,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
 
 }
