@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/media-queries.css">
     <script src="https://kit.fontawesome.com/c9a860bbe4.js" crossorigin="anonymous"></script>
     <script defer src="js/scroll.js"></script>
 
@@ -19,7 +18,7 @@
         <nav id="header-nav">
             <ul id="header-ul">
                 <li class="header-li"><a class="hover-underline-animation header-anchor" href="#about-me-section">About Me</a></li>
-                <li class="header-li"><a class="hover-underline-animation header-anchor"  href="#projects-section">Projects</a></li>
+                <li class="header-li "><a class="hover-underline-animation header-anchor"  href="#projects-section">Projects</a></li>
                 <li class="header-li"><a class="hover-underline-animation header-anchor"  href="#hire-me-section">Contact</a></li>
                 <!-- <li class="header-li"><a class="hover-underline-animation header-anchor"  href="#my-services-section">Services</a></li> -->
             </ul>
@@ -56,7 +55,7 @@
                         </div>
                     </div>
                     <div id="my-skills" class="hidden right">
-                        <p>Technologies I am familiar with</p>
+                        <p><b>SKILLS</b></p>
                         <div id="skills-container">
                             <span><i class="icon" style="background-image: url('/images/icons/html-124-svgrepo-com.svg');"></i></span>
                             <span><i class="icon" style="background-image: url('/images/icons/css3-02-svgrepo-com.svg');"></i></span>
@@ -74,50 +73,88 @@
         <section id="projects-section">
             <h1 class="section-label">MY PROJECTS</h1>
             <div id="projects">
-                <div class="project hidden left" id="OrakleSky">
-                    <img  class="project-image" src="https://placehold.co/600x400" alt="OrakleSky">
-                    <div class="project-info-container">
-                        <h2>ORAKLESKY</h2>
-                        <p class="project-description 1">Real-time weather information and multi-day forecasts for locations worldwide. 
-                        Search by city or use the current location.</p>
-                        <p class="shortened-description-mobile hidden-from-drop"></p>
-                        <a class="project-anchor"  href="https://www.example.com"  target='_blank'>View Site</a>
-                        <a class="project-anchor"  href="https://github.com/NyeemDavis/WeatherForecastApp"  target='_blank'>View Code</a>
+                <div class="project-container">
+                    <div class="project hidden left" id="OrakleSky">
+                        <img  class="project-image" src="/images/assets/my-photo.jpg" alt="OrakleSky">
+                        <div class="project-info-container">
+                            <h2>ORAKLESKY</h2>
+                            <p class="project-description 1">Real-time weather information and multi-day forecasts for locations worldwide. 
+                            Search by city or use the current location.</p>
+                            <p class="shortened-description-mobile hidden-from-drop"></p>
+                            <a class="project-anchor"  href="https://www.example.com"  target='_blank'>View Site</a>
+                            <a class="project-anchor"  href="https://github.com/NyeemDavis/WeatherForecastApp"  target='_blank'>View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-used-container">
+                        <span><i class="icon tech-used-icon" style="background-image: url('/images/icons/html-124-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon tech-used-icon" style="background-image: url('/images/icons/css3-02-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon tech-used-icon" style="background-image: url('/images/icons/javascript-155-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon tech-used-icon" style="background-image: url('/images/icons/react-javascript-js-framework-facebook-svgrepo-com.svg')"></i></span>
                     </div>
                 </div>
+                    
+                <div class="project-container">
+                    <div class="project hidden right" id="E-commerence">
+                        <img class="project-image" src="https://placehold.co/600x400" alt="E-commerence site">
+                        <div class="project-info-container">
+                            <h2>E-COMMERENCE SITE(COMING SOON)</h2>
+                            <p class="project-description 2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
+                            Quod magni saepe odit rem deserunt aspernatur</p>
+                            <p class="shortened-description-mobile  hidden-from-drop"></p>
+                            <a class="project-anchor"  href="https://www.example.com"  target='_blank'>View Site</a>
+                            <a class="project-anchor"  href=""  target='_blank'>View Code</a>
+                        </div>
+                    </div>
     
-                <div class="project hidden right" id="E-commerence">
-                    <img class="project-image" src="https://placehold.co/600x400" alt="E-commerence site">
-                    <div class="project-info-container">
-                        <h2>E-COMMERENCE SITE(COMING SOON)</h2>
-                        <p class="project-description 2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
-                        Quod magni saepe odit rem deserunt aspernatur</p>
-                        <p class="shortened-description-mobile  hidden-from-drop"></p>
-                        <a class="project-anchor"  href="https://www.example.com"  target='_blank'>View Site</a>
-                        <a class="project-anchor"  href=""  target='_blank'>View Code</a>
+                    <div class="tech-used-container">
+                        <span><i class="icon" style="background-image: url('/images/icons/html-124-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/css3-02-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/javascript-155-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/react-javascript-js-framework-facebook-svgrepo-com.svg')"></i></span>
                     </div>
                 </div>
-    
-                <div class="project hidden left" id="project-3">
-                    <img class="project-image" src="https://placehold.co/600x400" alt="E-commerence site">
-                    <div class="project-info-container">
-                        <h2>THIS PORTFOLIO!</h2>
-                        <p class="project-description 3">This exact portfolio you're looking at was made by me, Using HTML, CSS and JS. 
-                        I really wanted challenge my creativity while making this</p>
-                        <p class="shortened-description-mobile  hidden-from-drop"></p>
-                        <a class="project-anchor" href="https://github.com/NyeemDavis/MyPortfolio" target='_blank'>View Code</a>
+                
+                <div class="project-container">
+                    <div class="project hidden left" id="project-3">
+                        <img class="project-image" src="https://placehold.co/600x400" alt="E-commerence site">
+                        <div class="project-info-container">
+                            <h2>THIS PORTFOLIO!</h2>
+                            <p class="project-description 3">This exact portfolio you're looking at was made by me, Using HTML, CSS and JS. 
+                            I really wanted challenge my creativity while making this</p>
+                            <p class="shortened-description-mobile  hidden-from-drop"></p>
+                            <a class="project-anchor" href="https://github.com/NyeemDavis/MyPortfolio" target='_blank'>View Code</a>
+                        </div>
+                        
                     </div>
-                </div>
     
-                <div class="project hidden right" id="My-portfolio">
-                    <img class="project-image" src="https://placehold.co/600x400" alt="E-commerence site">
-                    <div class="project-info-container">
-                        <h2>COMING SOON</h2>
-                        <p class="project-description 4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
-                        Quod magni saepe odit rem deserunt aspernatur</p>
-                        <p class="shortened-description-mobile hidden-from-drop"  target='_blank'></p>
-                        <a class="project-anchor" href="https://www.example.com"  target='_blank'>View Site</a>
-                        <a class='project-anchor' href="">View Code</a>
+                    <div class="tech-used-container">
+                        <span><i class="icon" style="background-image: url('/images/icons/html-124-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/css3-02-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/javascript-155-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/react-javascript-js-framework-facebook-svgrepo-com.svg')"></i></span>
+                    </div>
+        
+                </div>
+                
+                <div class="project-container">
+                    <div class="project hidden right" id="My-portfolio">
+                        <img class="project-image" src="https://placehold.co/600x400" alt="E-commerence site">
+                        <div class="project-info-container">
+                            <h2>COMING SOON</h2>
+                            <p class="project-description 4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur voluptates praesentium non vitae. 
+                            Quod magni saepe odit rem deserunt aspernatur</p>
+                            <p class="shortened-description-mobile hidden-from-drop"  target='_blank'></p>
+                            <a class="project-anchor" href="https://www.example.com"  target='_blank'>View Site</a>
+                            <a class='project-anchor' href="">View Code</a>
+                        </div>
+                    </div>
+    
+                    <div class="tech-used-container">
+                        <span><i class="icon" style="background-image: url('/images/icons/html-124-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/css3-02-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/javascript-155-svgrepo-com.svg');"></i></span>
+                        <span><i class="icon" style="background-image: url('/images/icons/react-javascript-js-framework-facebook-svgrepo-com.svg')"></i></span>
                     </div>
                 </div>
             </div>
