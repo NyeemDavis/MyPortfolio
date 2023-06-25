@@ -1,6 +1,5 @@
 /* Other css files */
 @import url('animations.css');
-@import url('media-queries.css');
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&family=Roboto+Mono:wght@500&display=swap');
@@ -24,7 +23,6 @@
   src: url('../files/fonts/Nyght-Serif/NyghtSerif-Dark.woff') format('woff'),
        url('../files/fonts/Nyght-Serif/NyghtSerif-Dark.woff2') format('woff2');
        font-weight: 400;
-       font-display: swap;
 }
 
 @font-face {
@@ -32,7 +30,6 @@
   src:  url('../files/fonts/Nyght-Serif/NyghtSerif-DarkItalic.woff') format('woff'),
         url('../files/fonts/Nyght-Serif/NyghtSerif-DarkItalic.woff2') format('woff2');
         font-weight: 700;
-        font-display: swap;
 }
 
 @font-face {
@@ -52,6 +49,7 @@
 }
 
 
+
 /* Reset Styles */
 html {
   scroll-behavior: smooth;
@@ -63,7 +61,7 @@ html {
 }
 
 body {
-  font-family: 'NyghtSerifDark', 'Roboto Mono', monospace;
+  font-family: 'Satoshi-Bold', 'Roboto Mono', monospace;
   line-height: 1.6;
   background-color: var(--brown);
   letter-spacing: 1.8px; 
@@ -78,7 +76,7 @@ main {
   background-color: var(--brown);
   overflow-y: hidden;
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 /* General Styles */
@@ -103,15 +101,15 @@ header {
   left: 0;
   z-index: 2;
   font-size: var(--small-font-size);
+  color: white;
 }
 
 #header-name {
-  color: #C19A6B;
   font-family: 'NyghtSerifLight', 'serif';
 }
 
 .header-anchor {
-  color: #C19A6B;
+  color: white;
   transition: background-color 0.5s ease; 
 }
 
@@ -132,6 +130,9 @@ header {
 section {
   max-height: 120vh;
   color: black;
+  width: 100%;
+  padding: 10vh 0;
+  margin-bottom: 300px;
 }
 
 .section-label {
@@ -147,6 +148,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #C19A6B
  
 }
 
@@ -164,13 +166,13 @@ section {
   display: flex;
   flex-direction: column;
   justify-self: flex-start;
-  padding: 0rem 10rem 0rem 10rem;
+  padding: 10rem 10rem 0rem 10rem;
   color: white;
   animation: slideInLeft 1.4s;
 }
 
 #intro-description h4 {
-  color: var(--lightbrown);
+  color: var(--brown);
   font-size: 2.5rem;
 }
 
@@ -209,7 +211,7 @@ section {
 
 .intro-anchor {
   font-size: 1.3rem;
-  background-color: var(--lightbrown);
+  background-color: var(--brown);
   border-radius: 40px;
   padding: 10px;
   color: white;
@@ -220,7 +222,7 @@ section {
 }
 
 .intro-anchor:hover {
-  color:var(--brown);
+  color:var(--lightbrown);
 }
 
 /* About me */
@@ -282,11 +284,15 @@ section {
   width: 50%;
 }
 
+#my-skills h2 {
+  margin-bottom: 40px;
+}
+
 #skills-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 1px; /* Adjust the gap between the icons as desired */
+  grid-gap: 10px; /* Adjust the gap between the icons as desired */
   align-items: center;
   justify-items: center;
 }
@@ -304,21 +310,26 @@ section {
 
 #projects-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
 }
 
 .section-label {
   text-align: center;
 }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+
 
   #projects {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    grid-gap: 2.0833333333333vh 2.0833333333333vw;
+   background-color: #C19A6B;
+   padding: 25px 0;
   }
 
   .project {
@@ -335,6 +346,8 @@ section {
     text-align: center;
     width: fit-content;
     overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .project-info-container {
@@ -349,12 +362,11 @@ section {
   }
 
   .project-info-container:hover {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
   }
 
   .project:hover {
-    box-shadow: 0px 0px 10px #C19A6B;
-    color: black;
+    color: white;
     backdrop-filter: blur(20px);
   }
 
@@ -372,24 +384,11 @@ section {
     color: var(--lightbrown);
   }
 
-  
-
-
-
-
-/* Services */
-
-
-#services {
-  display: flex;
-  justify-content: space-around;
-}
-
-.service {
-  border: solid 1px black;
-  margin: 0px 5px 0px 5px
-}
-
+  .tech-used-container {
+    display: flex;
+    gap: 0.625rem;
+    align-self: center;
+  }
 
 /* Contact Form */
 #hire-me-section {
@@ -397,6 +396,7 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-top: 10vh
 }
 
 .contact-form {
@@ -447,6 +447,24 @@ footer {
 }
 
 
+
+
+@media screen and (max-width: 450px) {
+
+  section {
+    margin: 0 0 200px 0;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  #hire-me-section {
+    padding-top: 200px;
+  }
+}
+
+
  /* Small mobile phones */
 @media only screen and (max-width: 600px) {
   /* CSS rules */
@@ -461,24 +479,10 @@ footer {
     width: 66.667vw;
     align-self: center;
   }
-
-  #claim {
-    width: 66.667vw;
-  }
-
-  #skills-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 1.8867924528301887vw;
-    justify-items: center;
-    align-self: center;
-  }
-
-
 }
 
 /* Landscape mobile phones to portrait tablets */
-@media only screen and (min-width: 0px) and (max-width: 820px) and (max-height: 1024px) {
+@media screen and (min-width: 321px) and (max-width: 820px) {
   /* CSS rules */
   main {
     align-content: center;
@@ -486,29 +490,16 @@ footer {
     width: 100%;
   }
 
-  section {
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-  }
 
-  #projects-section {
-    padding-top: 20vh;
-  }
-
-  header {
+  /* header {
     position: unset;
-  }
+  } */
 
   #intro-section {
     text-align: center;
   }
-
-  #intro-section p {
-    margin: 0;
-  }
-
   #intro-description {
+    width: 100%;
     padding: 0;
   }
 
@@ -520,26 +511,17 @@ footer {
     font-size: 7.766990291262136vw;
   }
 
-  #intro-image-div {
-    padding-top: 10vh;
-  }
-
   #intro-anchor {
     font-size: 1.2rem;
   }
 
-  #about-me-section{
-    margin-top: 50vh;
-    margin-bottom: 50vh;
-  }
-
   #about-me-description {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   #about-me-info-container {
     flex-direction: column;
-    text-align: center;
   }
 
   #about-me-photo {
@@ -548,19 +530,22 @@ footer {
   }
 
   #about-me-paragraph {
-    width: 50%;
+    width: 100%;
     align-self: center;
   }
 
   #my-skills {
-    width: 100%;
-    text-align: center;
+    width:75%;
+  }
+
+  .project-container {
   }
 
   .project {
-    margin: 5vh 0px 5vh 0px;
-    width: 50%;
+    width: 65vw;
+    font-size: 0.9rem;
   }
+
 
   #E-commerence, #project-4 {
     align-self: center;
@@ -571,37 +556,30 @@ footer {
   }
 }
 
-/* @media screen and (max-width: 375px) {
-  #about-me-photo {
-    width: 175px;
-    height: 175px;
-  }
-} */
-
 /* Landscape tablets to laptops */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 821px) and (max-width: 1025px) {
   /* CSS rules */
- 
+  section {
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    padding: 0;
+  }
 }
-
-/* Large desktops */
-@media only screen and (min-width: 1025px) {
-  /* CSS rules */
-}
-
-
 @media screen and (max-width: 1300px) {  
   #intro-section {
     flex-direction: column;
     text-align: center;
   }
   
-  #project-section {
-    padding-bottom: 170vh;
+  #hire-me-section {
+    padding-top: 50px;
+    margin-bottom: 0;
+    margin-top: 38.461538461538vh;
   }
 
-  #hire-me-section {
-    padding-top: 70vh;
+  #projects-section {
+    margin-bottom: 38.461538461538vh;
   }
 
   #projects {
@@ -609,21 +587,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  #skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-}
-
-
-@media (orientation: landscape) {
-  #intro-section {
-    color: yellow;
   }
 
 }
