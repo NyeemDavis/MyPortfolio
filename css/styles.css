@@ -333,12 +333,9 @@ section {
   }
 
   .project {
-    color: var(--lightbrown);
     font-family: 'Satoshi-Bold', 'sans-serif';
-    justify-self: center;
     border-radius: 10px;
     border: 10px white solid;
-    transition: background-color 0.8s ease;
     transition: color 0.5 ease;
     display: flex;
     flex-direction: column;
@@ -348,6 +345,7 @@ section {
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: 10px;
+    background-color: green;
   }
 
   .project-info-container {
@@ -359,6 +357,12 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .project-description-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .project-info-container:hover {
@@ -568,22 +572,10 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  
-  #hire-me-section {
-    padding-top: 50px;
-    margin-bottom: 0;
-    margin-top: 38.461538461538vh;
-  }
 
-  #projects-section {
-    margin-bottom: 38.461538461538vh;
-  }
 
-  #projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .project {
+    width: 40vw;
   }
 
 
