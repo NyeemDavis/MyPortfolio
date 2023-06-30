@@ -91,11 +91,11 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   border-radius: 0.125rem;
   padding: 0rem 0.625rem;
   height: 5vh;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -131,8 +131,7 @@ section {
   max-height: 120vh;
   color: black;
   width: 100%;
-  padding: 10vh 0;
-  margin-bottom: 300px;
+  margin-bottom: 400px;
 }
 
 .section-label {
@@ -152,20 +151,11 @@ section {
  
 }
 
-#intro-image-dv {
-  width: 50%;
-}
-
-#intro-image {
-  animation: fadeIn 4s, slideInLeft 2s;
-  border-radius: 5rem;
-}
-
-
 #intro-description {
   display: flex;
   flex-direction: column;
-  justify-self: flex-start;
+  justify-self: center;
+  text-align: center;
   padding: 10rem 10rem 0rem 10rem;
   color: white;
   animation: slideInLeft 1.4s;
@@ -191,20 +181,16 @@ section {
 
 
 #social-icons {
-  margin: 0.1875rem 0rem 0.1875rem 0rem;
   font-size: var(--small-font-size);
   list-style: none;
 }
 
 #social-icons li {
-  margin-top: 0.9375rem;
   display: inline-block;
 }
 
-
-
 #intro-anchors {
-  margin-top: 1.5625rem;
+  padding: 20px 0;
   height: 12vh;
 }
 
@@ -262,12 +248,15 @@ section {
 }
 
 #about-me-photo {
-  align-self: center;
   border-radius: 50%;
   width: 43.05705059203444vh;
   height: 43.05705059203444vh;
   border-radius: 50%;
   border: var(--lightbrown) solid 8px;
+}
+
+#about-me-photo-anchor {
+  align-self: center;
 }
 
 #about-me-paragraph {
@@ -344,7 +333,6 @@ section {
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: 10px;
-    background-color: green;
   }
 
   .project-info-container {
@@ -399,6 +387,7 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: 250px 0;
 }
 
 .contact-form {
@@ -469,8 +458,12 @@ footer {
 
 @media screen and (max-width: 500px) {
 
-  #claim {
-    font-size: 2rem !important ;
+  body #claim {
+    font-size: 2rem;
+  }
+
+  body .project {
+    width: 300px;
   }
  
 }
@@ -549,9 +542,7 @@ footer {
     margin-bottom: 1000px;
   }
 
-  #hire-me-section {
-    margin-top: 500px;
-  }
+  
 }
 
 @media screen and (max-width: 1300px) {  
