@@ -379,6 +379,7 @@ section {
     display: flex;
     gap: 0.625rem;
     align-self: center;
+    padding: 10px 0;
   }
 
 /* Contact Form */
@@ -457,6 +458,14 @@ footer {
     width: 300px;
   }
 
+  .icon {
+    height: 46px;
+    width: 46px;
+  }
+
+  .project-description {
+    width: 100%;
+  }
   
 }
 
