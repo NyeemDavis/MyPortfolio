@@ -128,10 +128,10 @@ header {
 
 /* Sections */
 section {
-  max-height: 120vh;
+  min-height: 120vhs;
   color: black;
   width: 100%;
-  margin-bottom: 400px;
+  margin-bottom: 15vh;
 }
 
 .section-label {
@@ -312,11 +312,11 @@ section {
 
 
   #projects {
+   background-color: #F5DEB3;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    grid-gap: 2.0833333333333vh 2.0833333333333vw;
-   background-color: #C19A6B;
    padding: 25px 0;
   }
 
@@ -387,13 +387,14 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 250px 0;
+  padding: 150px 0;
+  margin-bottom: 0;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 80vw;
   gap: 1.0787486515641855vh;
   color: white;
 }
@@ -440,12 +441,6 @@ footer {
 
 
 
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
   /* CSS rules */
   #header-name {
@@ -454,10 +449,6 @@ footer {
   header {
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 500px) {
-
   body #claim {
     font-size: 2rem;
   }
@@ -465,7 +456,8 @@ footer {
   body .project {
     width: 300px;
   }
- 
+
+
 }
 
 @media screen and (max-width: 820px) {
@@ -514,22 +506,15 @@ footer {
   #my-skills {
     width:75%;
   }
-
-  .project {
-    font-size: 0.9rem;
-  }
-
-  .project-description {
-    display: none;
-  }
+  
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1025px)  {
   /* CSS rules */
   section {
     justify-content: center;
     align-items: center;
-    min-height: 700px;
+    min-height: 1000px;
     padding: 0;
   }
 
@@ -539,7 +524,11 @@ footer {
   }
 
   #projects-section {
-    margin-bottom: 1000px;
+    margin-bottom: 15vh;
+  }
+
+  #hire-me-section {
+    margin-top: 15vh;
   }
 
   
